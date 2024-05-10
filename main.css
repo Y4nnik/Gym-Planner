@@ -1,0 +1,9 @@
+:root {
+    --mainbackground: #102F50;
+    --secondarybackground: #374C64;
+    --secondarycolor: #EF418F;
+}
+
+html {
+    background-color: var(--mainbackground);
+}
