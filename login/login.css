@@ -1,0 +1,24 @@
+@keyframes fadey { 
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+    }
+    body { 
+      font-family: Avenir, Arial, sans-serif; 
+      margin: 0;
+      font-size: 0;
+    }
+    figure#slideshow { 
+      width: 100%; 
+      margin: 0 auto; 
+      position: absolute; 
+      cursor: pointer;
+    }
+    figure#slideshow img { 
+      position: absolute; 
+      left: 0; top: 0; 
+      width: 100%; height: 650px; 
+      opacity: 0; 
+    }
+    figure#slideshow img:first-child { position: relative; }
