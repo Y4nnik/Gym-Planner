@@ -1,0 +1,2468 @@
+{
+    "initial": {
+        "diagrams": [
+            {
+                "id": "1715269830511",
+                "items": [
+                    {
+                        "id": "1715269830542",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 530,
+                            "y": 400,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269831801",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 530,
+                            "y": 303,
+                            "w": 800,
+                            "h": 406,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269832260",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#ef418f",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#ef418f",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Registrieren "
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 415.5,
+                            "y": 628,
+                            "w": 117,
+                            "h": 36,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269832414",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#ef418f",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#ef418f",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Login ",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 645.5,
+                            "y": 628,
+                            "w": 117,
+                            "h": 36,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269832878",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Beschreibung der Website und wofür man sich anmeldet (Image oben: Bewegtes Bild vom Gym training)"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 530.5,
+                            "y": 556.5,
+                            "w": 347,
+                            "h": 79,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846452",
+                        "appearance": {
+                            "BORDER_RADIUS": 0,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Footer (About Us) Navigationsleiste....",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 530,
+                            "y": 679,
+                            "w": 800,
+                            "h": 42,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269830542",
+                    "1715269831801",
+                    "1715269832260",
+                    "1715269832414",
+                    "1715269832878",
+                    "1715269846452"
+                ],
+                "title": "Login"
+            },
+            {
+                "id": "1715269831270",
+                "items": [
+                    {
+                        "id": "1715269831316",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 482,
+                            "y": 329,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269833355",
+                        "appearance": {
+                            "BORDER_RADIUS": 12,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 0,
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 482.5,
+                            "y": 198,
+                            "w": 767,
+                            "h": 60,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269833995",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Mo",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 148.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834534",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Di",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 260.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834541",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Mi",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 372.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834548",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Do",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 484.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834555",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Fr",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 596.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834562",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Sa",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 708.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269834569",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "So",
+                            "SHAPE": "Ellipse"
+                        },
+                        "renderer": "Shape",
+                        "transform": {
+                            "x": 820.5,
+                            "y": 198.5,
+                            "w": 45,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269837492",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 0,
+                            "STROKE_COLOR": "#252525",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 280.5,
+                            "y": 299,
+                            "w": 363,
+                            "h": 118,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269837836",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 0,
+                            "STROKE_COLOR": "#252525",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 686.5,
+                            "y": 299,
+                            "w": 359,
+                            "h": 118,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269838119",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 18,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Workout"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 288.5,
+                            "y": 266,
+                            "w": 101,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269838594",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 176,
+                            "y": 299,
+                            "w": 100,
+                            "h": 100,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269838740",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 583,
+                            "y": 299,
+                            "w": 100,
+                            "h": 100,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839159",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 14,
+                            "BACKGROUND_COLOR": "#9fb0d5",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Rest Day/Training"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 310,
+                            "y": 299,
+                            "w": 144,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839410",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 18,
+                            "BACKGROUND_COLOR": "#9fb0d5",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Tag"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 415.5,
+                            "y": 266,
+                            "w": 67,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839567",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 415,
+                            "y": 329,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839660",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 18,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Ernährung"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 705.5,
+                            "y": 266,
+                            "w": 115,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839661",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 14,
+                            "BACKGROUND_COLOR": "#9fb0d5",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "0 kcal gegessen"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 720,
+                            "y": 299,
+                            "w": 144,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269839663",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 825,
+                            "y": 329,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269840100",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 14,
+                            "BACKGROUND_COLOR": "#9fb0d5",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "2800 kcal offen"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 720,
+                            "y": 326,
+                            "w": 144,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269840222",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Motivationstexte von berühmten Sportlern --> #MaggusMemes"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 460,
+                            "y": 403,
+                            "w": 578,
+                            "h": 52,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269840478",
+                        "childIds": [
+                            "1715269833995",
+                            "1715269834534",
+                            "1715269834541",
+                            "1715269834548",
+                            "1715269834555",
+                            "1715269834562",
+                            "1715269834569"
+                        ],
+                        "rotation": 0,
+                        "type": "Group"
+                    },
+                    {
+                        "id": "1715269841367",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 482,
+                            "y": 116,
+                            "w": 758,
+                            "h": 74,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269841590",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 313,
+                            "y": 55,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269842640",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 437,
+                            "y": 55,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269842743",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 570,
+                            "y": 55,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269842868",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 840,
+                            "y": 54,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269843118",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 730,
+                            "y": 55,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269844100",
+                        "appearance": {
+                            "BORDER_RADIUS": 0,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Footer (About Us) Navigationsleiste....",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 482,
+                            "y": 608,
+                            "w": 800,
+                            "h": 42,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269844402",
+                        "appearance": {
+                            "BORDER_RADIUS": 12,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Deine Trainingswoche",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 482.5,
+                            "y": 471,
+                            "w": 767,
+                            "h": 46,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269844736",
+                        "appearance": {
+                            "BORDER_RADIUS": 12,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "News",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 484.5,
+                            "y": 536,
+                            "w": 767,
+                            "h": 46,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269844859",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 833,
+                            "y": 471,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269845036",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 833,
+                            "y": 536,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269845205",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 146,
+                            "y": 538,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269845452",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ef418f",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 146,
+                            "y": 471,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846225",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 149,
+                            "y": 55,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269851730",
+                        "childIds": [
+                            "1715269838119",
+                            "1715269839410",
+                            "1715269839159",
+                            "1715269839567",
+                            "1715269838594"
+                        ],
+                        "rotation": 0,
+                        "type": "Group"
+                    },
+                    {
+                        "id": "1715269851749",
+                        "childIds": [
+                            "1715269839660",
+                            "1715269839661",
+                            "1715269840100",
+                            "1715269839663",
+                            "1715269838740"
+                        ],
+                        "rotation": 0,
+                        "type": "Group"
+                    }
+                ],
+                "rootIds": [
+                    "1715269831316",
+                    "1715269833355",
+                    "1715269837492",
+                    "1715269837836",
+                    "1715269840222",
+                    "1715269840478",
+                    "1715269841367",
+                    "1715269841590",
+                    "1715269842640",
+                    "1715269842743",
+                    "1715269842868",
+                    "1715269843118",
+                    "1715269844100",
+                    "1715269844402",
+                    "1715269844736",
+                    "1715269844859",
+                    "1715269845036",
+                    "1715269845205",
+                    "1715269845452",
+                    "1715269846225",
+                    "1715269851730",
+                    "1715269851749"
+                ],
+                "title": "Home"
+            },
+            {
+                "id": "1715269831276",
+                "items": [
+                    {
+                        "id": "1715269831324",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 484,
+                            "y": 403,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846587",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 321,
+                            "y": 122,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846588",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 442,
+                            "y": 121,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846589",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 575,
+                            "y": 121,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846590",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 845,
+                            "y": 120,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846591",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 735,
+                            "y": 121,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269846592",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 154,
+                            "y": 126,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269847727",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#ffffff",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Übung suchen"
+                        },
+                        "renderer": "TextInput",
+                        "transform": {
+                            "x": 472,
+                            "y": 177.5,
+                            "w": 676,
+                            "h": 37,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848073",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 782,
+                            "y": 176,
+                            "w": 34,
+                            "h": 34,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269850409",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 472,
+                            "y": 260,
+                            "w": 676,
+                            "h": 90,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269850617",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 472,
+                            "y": 369,
+                            "w": 676,
+                            "h": 90,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269850677",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 472,
+                            "y": 478,
+                            "w": 676,
+                            "h": 90,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269850905",
+                        "appearance": {
+                            "BORDER_RADIUS": 15,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 472,
+                            "y": 587,
+                            "w": 676,
+                            "h": 90,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269851019",
+                        "appearance": {
+                            "BORDER_RADIUS": 0,
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Footer (About Us) Navigationsleiste....",
+                            "PADDING_HORIZONTAL2": 10,
+                            "PADDING_VERTICAL2": 10
+                        },
+                        "renderer": "Rectangle",
+                        "transform": {
+                            "x": 484,
+                            "y": 682,
+                            "w": 800,
+                            "h": 42,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269851361",
+                        "appearance": {
+                            "ARROW_COLOR": 12434877,
+                            "FOREGROUND_COLOR": 15790320,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 15790320,
+                            "STROKE_THICKNESS": 2,
+                            "TEXT_DISABLED": true,
+                            "BAR_COLOR": 12434877,
+                            "BAR_POSITION": 0,
+                            "BAR_SIZE": 50
+                        },
+                        "renderer": "VerticalScrollbar",
+                        "transform": {
+                            "x": 874,
+                            "y": 406.5,
+                            "w": 20,
+                            "h": 495,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269851783",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 179,
+                            "y": 260.5,
+                            "w": 50,
+                            "h": 65,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269852277",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 179,
+                            "y": 369.5,
+                            "w": 50,
+                            "h": 65,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269852312",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 179,
+                            "y": 478.5,
+                            "w": 50,
+                            "h": 65,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269852373",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": ""
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 179,
+                            "y": 587.5,
+                            "w": 50,
+                            "h": 65,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269852494",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 18,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Schrägbankdrücken"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 343.5,
+                            "y": 231.5,
+                            "w": 197,
+                            "h": 33,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269852921",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#374c64",
+                            "FONT_SIZE": 14,
+                            "BACKGROUND_COLOR": "#9fb0d5",
+                            "STROKE_COLOR": "#374c64",
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Bank ; Multipresse\nBrust (obere)"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 348.5,
+                            "y": 270.5,
+                            "w": 207,
+                            "h": 45,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269853307",
+                        "appearance": {
+                            "BACKGROUND_COLOR": 0,
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 762,
+                            "y": 260,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269831324",
+                    "1715269846587",
+                    "1715269846588",
+                    "1715269846589",
+                    "1715269846590",
+                    "1715269846591",
+                    "1715269846592",
+                    "1715269847727",
+                    "1715269848073",
+                    "1715269850409",
+                    "1715269850617",
+                    "1715269850677",
+                    "1715269850905",
+                    "1715269851019",
+                    "1715269851361",
+                    "1715269851783",
+                    "1715269852277",
+                    "1715269852312",
+                    "1715269852373",
+                    "1715269852494",
+                    "1715269852921",
+                    "1715269853307"
+                ],
+                "title": "Gym"
+            },
+            {
+                "id": "1715269831285",
+                "items": [
+                    {
+                        "id": "1715269831334",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 549,
+                            "y": 461,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848370",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 386,
+                            "y": 194,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848371",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 507,
+                            "y": 193,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848372",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 640,
+                            "y": 193,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848373",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 910,
+                            "y": 192,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848374",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 800,
+                            "y": 193,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848375",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 219,
+                            "y": 198,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269831334",
+                    "1715269848370",
+                    "1715269848371",
+                    "1715269848372",
+                    "1715269848373",
+                    "1715269848374",
+                    "1715269848375"
+                ],
+                "title": "Workouts"
+            },
+            {
+                "id": "1715269831288",
+                "items": [
+                    {
+                        "id": "1715269848968",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 505,
+                            "y": 408,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848969",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 342,
+                            "y": 141,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848970",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 463,
+                            "y": 140,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848971",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 596,
+                            "y": 140,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848972",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 866,
+                            "y": 139,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848973",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 756,
+                            "y": 140,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848974",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 175,
+                            "y": 145,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269848968",
+                    "1715269848969",
+                    "1715269848970",
+                    "1715269848971",
+                    "1715269848972",
+                    "1715269848973",
+                    "1715269848974"
+                ],
+                "title": "About Us"
+            },
+            {
+                "id": "1715269831295",
+                "items": [
+                    {
+                        "id": "1715269849319",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 514,
+                            "y": 436,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849320",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 351,
+                            "y": 169,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849321",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 472,
+                            "y": 168,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849322",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 605,
+                            "y": 168,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849323",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 875,
+                            "y": 167,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849324",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 765,
+                            "y": 168,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269849325",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 184,
+                            "y": 173,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269849319",
+                    "1715269849320",
+                    "1715269849321",
+                    "1715269849322",
+                    "1715269849323",
+                    "1715269849324",
+                    "1715269849325"
+                ],
+                "title": "Profil/Einstellungen"
+            },
+            {
+                "id": "1715269847522",
+                "items": [
+                    {
+                        "id": "1715269848777",
+                        "appearance": {
+                            "FOREGROUND_COLOR": "#102f50",
+                            "TEXT_DISABLED": true
+                        },
+                        "renderer": "Browser",
+                        "transform": {
+                            "x": 512,
+                            "y": 455,
+                            "w": 800,
+                            "h": 600,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848778",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Gym",
+                            "LINK": "page://1715269831276"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 349,
+                            "y": 188,
+                            "w": 60,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848779",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Workouts",
+                            "LINK": "page://1715269831285"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 470,
+                            "y": 187,
+                            "w": 110,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848780",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Ernährung",
+                            "LINK": "page://1715269847522"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 603,
+                            "y": 187,
+                            "w": 118,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848781",
+                        "appearance": {
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "TEXT_DISABLED": true,
+                            "TEXT": "",
+                            "ICON_FONT_FAMILY": "FontAwesome",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Icon",
+                        "transform": {
+                            "x": 873,
+                            "y": 186,
+                            "w": 40,
+                            "h": 40,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848782",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 24,
+                            "BACKGROUND_COLOR": "#ffffff",
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "Einstellungen",
+                            "LINK": "page://1715269831295"
+                        },
+                        "renderer": "Link",
+                        "transform": {
+                            "x": 763,
+                            "y": 187,
+                            "w": 150,
+                            "h": 38,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1715269848783",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_DISABLED": true,
+                            "ASPECT_RATIO": true,
+                            "URL": "",
+                            "LINK": "page://1715269831270"
+                        },
+                        "renderer": "Image",
+                        "transform": {
+                            "x": 182,
+                            "y": 192,
+                            "w": 100,
+                            "h": 28,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1715269848777",
+                    "1715269848778",
+                    "1715269848779",
+                    "1715269848780",
+                    "1715269848781",
+                    "1715269848782",
+                    "1715269848783"
+                ],
+                "title": "Ernährung"
+            }
+        ],
+        "diagramIds": [
+            "1715269830511",
+            "1715269831270",
+            "1715269831276",
+            "1715269831285",
+            "1715269847522",
+            "1715269831288",
+            "1715269831295"
+        ],
+        "id": "72ecbca7-d6dc-729a-9975-9c7d62e36c3f",
+        "size": {
+            "x": 1000,
+            "y": 1000
+        }
+    },
+    "actions": [
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332402109,
+                "appearance": {
+                    "key": "BACKGROUND_COLOR",
+                    "value": "#9fb0d5"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853307"
+                ]
+            }
+        },
+        {
+            "type": "items/paste",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332419299,
+                "json": "{\"visuals\":[{\"id\":\"1715269853432\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":18,\"BACKGROUND_COLOR\":\"#ffffff\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Schrägbankdrücken\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":343.5,\"y\":231.5,\"w\":197,\"h\":33,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269853433\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":14,\"BACKGROUND_COLOR\":\"#9fb0d5\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Bank ; Multipresse\\nBrust (obere)\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":348.5,\"y\":270.5,\"w\":207,\"h\":45,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269853434\",\"appearance\":{\"BACKGROUND_COLOR\":\"#9fb0d5\",\"TEXT_DISABLED\":true,\"TEXT\":\"\",\"ICON_FONT_FAMILY\":\"FontAwesome\"},\"renderer\":\"Icon\",\"transform\":{\"x\":762,\"y\":260,\"w\":40,\"h\":40,\"r\":0},\"type\":\"Shape\"}],\"groups\":[]}",
+                "offset": 50
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332422815,
+                "oldBounds": {
+                    "x": 563.5,
+                    "y": 304,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 513.5,
+                    "y": 364,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853432",
+                    "1715269853433",
+                    "1715269853434"
+                ]
+            }
+        },
+        {
+            "type": "items/paste",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332424704,
+                "json": "{\"visuals\":[{\"id\":\"1715269853651\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":18,\"BACKGROUND_COLOR\":\"#ffffff\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Schrägbankdrücken\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":343.5,\"y\":231.5,\"w\":197,\"h\":33,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269853652\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":14,\"BACKGROUND_COLOR\":\"#9fb0d5\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Bank ; Multipresse\\nBrust (obere)\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":348.5,\"y\":270.5,\"w\":207,\"h\":45,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269853653\",\"appearance\":{\"BACKGROUND_COLOR\":\"#9fb0d5\",\"TEXT_DISABLED\":true,\"TEXT\":\"\",\"ICON_FONT_FAMILY\":\"FontAwesome\"},\"renderer\":\"Icon\",\"transform\":{\"x\":762,\"y\":260,\"w\":40,\"h\":40,\"r\":0},\"type\":\"Shape\"}],\"groups\":[]}",
+                "offset": 100
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332427916,
+                "oldBounds": {
+                    "x": 613.5,
+                    "y": 354,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 513.5,
+                    "y": 478,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853651",
+                    "1715269853652",
+                    "1715269853653"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332435428,
+                "oldBounds": {
+                    "x": 343.5,
+                    "y": 341.5,
+                    "w": 197,
+                    "h": 33,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 343.5,
+                    "y": 340.5,
+                    "w": 197,
+                    "h": 33,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853432"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332439313,
+                "oldBounds": {
+                    "x": 513.5,
+                    "y": 363.5,
+                    "w": 537,
+                    "h": 79,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 513.5,
+                    "y": 369.5,
+                    "w": 537,
+                    "h": 79,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853432",
+                    "1715269853433",
+                    "1715269853434"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332445776,
+                "oldBounds": {
+                    "x": 513.5,
+                    "y": 254,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 513.5,
+                    "y": 260,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853307",
+                    "1715269852494",
+                    "1715269852921"
+                ]
+            }
+        },
+        {
+            "type": "items/paste",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332449524,
+                "json": "{\"visuals\":[{\"id\":\"1715269854059\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":18,\"BACKGROUND_COLOR\":\"#ffffff\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Schrägbankdrücken\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":343.5,\"y\":231.5,\"w\":197,\"h\":33,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269854060\",\"appearance\":{\"FOREGROUND_COLOR\":\"#374c64\",\"FONT_SIZE\":14,\"BACKGROUND_COLOR\":\"#9fb0d5\",\"STROKE_COLOR\":\"#374c64\",\"STROKE_THICKNESS\":1,\"TEXT_ALIGNMENT\":\"left\",\"TEXT\":\"Bank ; Multipresse\\nBrust (obere)\"},\"renderer\":\"TextArea\",\"transform\":{\"x\":348.5,\"y\":270.5,\"w\":207,\"h\":45,\"r\":0},\"type\":\"Shape\"},{\"id\":\"1715269854061\",\"appearance\":{\"BACKGROUND_COLOR\":\"#9fb0d5\",\"TEXT_DISABLED\":true,\"TEXT\":\"\",\"ICON_FONT_FAMILY\":\"FontAwesome\"},\"renderer\":\"Icon\",\"transform\":{\"x\":762,\"y\":260,\"w\":40,\"h\":40,\"r\":0},\"type\":\"Shape\"}],\"groups\":[]}",
+                "offset": 150
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332454993,
+                "oldBounds": {
+                    "x": 663.5,
+                    "y": 404,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 496.5,
+                    "y": 587,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269854059",
+                    "1715269854060",
+                    "1715269854061"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332464163,
+                "oldBounds": {
+                    "x": 496.5,
+                    "y": 587,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 513.5,
+                    "y": 587,
+                    "w": 537,
+                    "h": 78,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269854059",
+                    "1715269854060",
+                    "1715269854061"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332482779,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Beinpresse"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853432"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332496162,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Maschine\nQuadrizeps"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853433"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332506600,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Rumänisches Kreuzheben"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853651"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332508930,
+                "oldBounds": {
+                    "x": 343.5,
+                    "y": 455.5,
+                    "w": 197,
+                    "h": 33,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 371,
+                    "y": 455.5,
+                    "w": 252,
+                    "h": 33,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1715269853651"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332521725,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Langhantel ; Kurzhantel\nBrust (obere)"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853652"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332530448,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Langhantel ; Kurzhantel\nBeinbeuger"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269853652"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332553735,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "T-Bar Rudern (breit)"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269854059"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1715269831276",
+                "timestamp": 1715332570209,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "T-Bar\nRücken (oberer)"
+                },
+                "force": false,
+                "itemIds": [
+                    "1715269854060"
+                ]
+            }
+        }
+    ]
+}
