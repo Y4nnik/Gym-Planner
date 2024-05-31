@@ -7,7 +7,6 @@
     body { 
       font-family: Avenir, Arial, sans-serif; 
       margin: 0;
-      font-size: 0;
     }
     figure#slideshow { 
       width: 100%; 
@@ -22,3 +21,11 @@
       opacity: 0; 
     }
     figure#slideshow img:first-child { position: relative; }
+
+    .loginContainer {
+      position: absolute;
+      top: 50%;
+      height: 300px;
+      width: 400px;
+      background: gray;
+    }
