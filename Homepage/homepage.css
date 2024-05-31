@@ -1,4 +1,5 @@
 /* Homepage CSS */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -44,7 +45,7 @@ body {
 .day {
     background-color: var(--mainbackground);
     color: white;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 50%;
     text-align: center;
     width: 45px;
