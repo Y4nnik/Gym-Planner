@@ -121,6 +121,7 @@ figure img {
     padding: 2em;
     width: 45%;
     text-align: center;
+    align-items: center;
 
 }
 .button :hover{
