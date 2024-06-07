@@ -113,8 +113,8 @@ figure img {
 }
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 25% 55% 20%;
+    grid-template-rows: 100%;
     grid-template-areas:"image content buttun";
     background-color: var(--secondarybackground);
     border-radius: 1em;
