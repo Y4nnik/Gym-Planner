@@ -162,6 +162,8 @@ iframe {
     justify-content: space-between;
     padding: 2em;
     margin-bottom: 2em;
+    text-align: center;
+    align-items: center;
 }
 .footer {
     background-color: var(--secondarybackground);;
