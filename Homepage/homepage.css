@@ -68,26 +68,31 @@ body {
 {
     height: 100%;
 }
+figure img {
+    width: 100%;
+    height: auto;
+
+}
 .main {
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+    padding: 2em;
 }
 .week-days {
     background-color: var(--secondarybackground);
     display: flex;
+    border-radius: 1em;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 .day {
     background-color: var(--mainbackground);
     color: white;
-    padding: 10px;
+    padding: 1em;
     border-radius: 50%;
     text-align: center;
-    width: 45px;
-    height: 40px;
-    line-height: 40px;
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    margin: 1em;
 }
 .content-Tracking {
     display: flex;
@@ -100,24 +105,41 @@ body {
     color: var(--secondarytext);
 }
 .content-Tracking a {
+    justify-content: center;
+    align-content: center;
+    font-size: 2em;
     color: var(--secondarycolor);
     text-decoration: none;
 }
 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"image content buttun";
     background-color: var(--secondarybackground);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 1em;
+    padding: 2em;
     width: 45%;
     text-align: center;
+
 }
-.card img {
-    width: 20%;
-    height: auto;
-    border-radius: 10px;
+.button :hover{
+    font-size: 3em;
+    text-decoration: underline;
+}
+.IFrame p {
+    color: white;
+    font-size: 2em;
+}
+iframe {
+    width: 100%;
+    height: 50em;
+    border: none;
 }
 .content-Informations {
     display: flex;
     flex-direction: column;
+    padding-top: 2em;
 }
 .content-Informations h3 {
      color: white;
@@ -127,22 +149,24 @@ body {
 }
 .content-Informations a {
     color: var(--secondarycolor);
+    font-size: 2em;
     text-decoration: none;
 }
 .banner {
     background-color: var(--secondarybackground);
-    border-radius: 10px;
-    width: 99%;
+    border-radius: 1em;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0;
+    padding: 2em;
+    margin-bottom: 2em;
 }
 .footer {
     background-color: var(--secondarybackground);;
-    padding: 20px;
+    padding: 2em;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1em;
 }
 .footer a {
     color: white;
@@ -166,7 +190,7 @@ body {
     }
     iframe {
         height: 100%;
-        width: auto;
+        width: 100%;
     }
 }
 
