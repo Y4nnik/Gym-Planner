@@ -167,9 +167,8 @@ iframe {
 }
 .footer {
     background-color: var(--secondarybackground);;
-    padding: 2em;
+    padding: 2em 0;
     text-align: center;
-    border-radius: 1em;
 }
 .footer a {
     color: white;

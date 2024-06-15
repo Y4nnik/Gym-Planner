@@ -6,8 +6,10 @@
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="einstellung.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 <body>
+<script src="einstellung.js"></script>
     <div class="nav-bar">
         <hr>
         <a href="../Homepage/homepage.html"><img src="../img/Logo.png" alt="Logo"></a>
@@ -18,5 +20,63 @@
             <a href="../Einstellung/einstellung.html" class="active">Einstellungen</a>
         </div>
     </div>
+<div class="main">
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fa fa-user"></i>
+                </a>
+            </nav>
+
+        </div>
+
+    </div>
+    <form>
+        <div class="User Settings">
+            <h2>Benutzerinformationen</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required>
+            </div>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="geburtstag">Geburtstag:</label>
+                <input type="date" id="geburtstag" name="geburtstag" required>
+            </div>
+            <div>
+                <label for="geschlecht">Geschlecht:</label>
+                <select id="geschlecht" name="geschlecht" required>
+                    <option value="männlich">männlich</option>
+                    <option value="weiblich">weiblich</option>
+                    <option value="divers">divers</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Speichern">
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

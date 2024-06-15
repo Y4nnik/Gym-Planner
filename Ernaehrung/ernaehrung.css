@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .nav-bar {
     display: flex;
@@ -99,24 +100,35 @@ body {
     background-color: var(--secondarybackground);
     border-radius: 1em;
     padding: 0 1em;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 10% 25% 25% 40%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
     gap: 0;
     grid-template-areas:
-    "heading heading heading"
-    "calories-eaten calories-left calories-planned"
-    "carbs proteins fat"
-    "meal-tracking meal-tracking meal-tracking";
+    "heading"
+    "calories-overview"
+    "naehrwerte"
+    "meal-tracking";
 }
 .heading {
     grid-area: heading;
     text-align: left;
     color: white;
     font-size: 1.5em;
+}
+
+.calories-overview {
+    grid-area: calories-overview;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    gap: 0;
+    grid-template-areas: "calories-eaten calories-left calories-planned";
+    text-align: center;
+    align-items: center;
 }
 .calories-eaten {
     grid-area: calories-eaten;
@@ -128,12 +140,85 @@ body {
     color: white;
     font-size: 1em;
 }
+
+svg {
+    height: 10em;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+path {
+    stroke-linecap: round;
+    stroke-width: 5;
+}
+
+path.grey {
+    stroke: var(--secondarytext);
+    stroke-dasharray:calc(40 * 3.142 * 1.85) ;
+    stroke-dashoffset: 20;
+}
+
+path.purple {
+    stroke: var(--secondarycolor);
+    stroke-dasharray: calc(40 * 3.142 * 1.85);
+    stroke-dashoffset: 230;
+    /* adjust last number for variance */
+}
+
 .calories-planned {
     grid-area: calories-planned;
     color: white;
     font-size: 1em;
 }
+.calories-left p, .calories-eaten p, .calories-planned p {
+    color: var(--secondarytext);
+}
 
+.Naehrwerte {
+    grid-area: naehrwerte;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    gap: 0;
+    grid-template-areas: "carbs proteins fat";
+    text-align: center;
+    align-items: center;
+}
+.carbs {
+    grid-area: carbs;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carbs p, .proteins p, .fat p {
+    color: var(--secondarytext);
+}
+.proteins {
+    grid-area: proteins;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fat {
+    grid-area: fat;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-tracking {
+    grid-area: meal-tracking;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
 .banner {
     background-color: var(--mainbackground);
     border-radius: 1em;
@@ -145,15 +230,60 @@ body {
     margin-bottom: 2em;
     text-align: center;
     align-items: center;
+    color: var(--secondarytext);
 }
 
 .footer {
     background-color: var(--secondarybackground);;
     padding: 2em;
     text-align: center;
-    border-radius: 1em;
 }
 .footer a {
     color: white;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 1.5em;
+        width: auto;
+    }
+    .week-days {
+        flex-direction: column;
+        align-items: center;
+    }
+    .day {
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        margin: 0.5em;
+    }
+}
+@media (max-width: 480px) {
+    .nav-bar img {
+        width: 75px;
+        height: 50px;
+    }
+    .nav a {
+        font-size: 1.2em;
+        padding: 10px 5px;
+    }
+    .day {
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        margin: 0.2em;
+    }
+    .banner {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
 }

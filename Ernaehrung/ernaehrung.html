@@ -34,39 +34,41 @@
         </div>
         <div class="calories-overview">
             <div class="calories-eaten">
-                <p>0</p>
+                <h3>0</h3>
                 <p>gegessen</p>
             </div>
             <div class="calories-left">
-                <p>2800</p>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 100 100">
+                    <path class="grey" d="M40,86
+             A40,40 0 1,1 60,90"
+                          style="fill:none;"/>
+                    <path class="purple" d="M40,86
+             A40,40 0 1,1 60,90"
+                          style="fill:none;"/>
+                </svg>
+                <h3>2800</h3>
                 <p>offen</p>
             </div>
             <div class="calories-planned">
-                <p>2800</p>
+                <h3>2800</h3>
                 <p>geplant</p>
             </div>
         </div>
-        <div class="Nährwerte">
+        <div class="Naehrwerte">
             <div class="carbs">
                 <h3>Kohlenhydrate</h3>
-                <div class="progress-bar">
-                    <div id="carbs-progress"></div>
+                <progress id="carbs" value="0" max="100"></progress>
                 <p>0 / 263g</p>
-                </div>
             </div>
             <div class="proteins">
-                <h3>Kohlenhydrate</h3>
-                <div class="progress-bar">
-                    <div id="proteins-progress"></div>
-                    <p>0 / 206g</p>
-                </div>
+                <h3>Proteine</h3>
+                <progress id="proteins" value="10" max="100"></progress>
+                <p>0 / 206g</p>
             </div>
             <div class="fat">
-                <h3>Kohlenhydrate</h3>
-                <div class="progress-bar">
-                    <div id="fat-progress"></div>
-                    <p>0 / 97g</p>
-                </div>
+                <h3>Fett</h3>
+                <progress id="fat" value="20" max="100"></progress>
+                <p>0 / 97g</p>
             </div>
         </div>
 
