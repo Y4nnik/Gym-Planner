@@ -6,81 +6,77 @@
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="einstellung.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="einstellung.js"></script>
 </head>
 <body>
-<script src="einstellung.js"></script>
     <div class="nav-bar">
         <hr>
         <a href="../Homepage/homepage.html"><img src="../img/Logo.png" alt="Logo"></a>
         <div class="nav">
             <a href="../Uebungen/uebungen.html">Gym</a>
             <a href="../Workouts/workout.html">Workouts</a>
-            <a href="../Ernaehrung/ernaehrung.html">Ernährung</a>
-            <a href="../Einstellung/einstellung.html" class="active">Einstellungen</a>
+            <a href="../Ernaehrung/ernaehrung.html" class="active">Ernährung</a>
+            <a href="../Einstellung/einstellung.html">Einstellungen</a>
         </div>
     </div>
-<div class="main">
-    <div class="container">
-        <div class="leftbox">
-            <nav>
-                <a onclick="tabs(0)" class="tab">
-                    <i class="fa fa-user"></i>
-                </a>
-                <a onclick="tabs(1)" class="tab">
-                    <i class="fa fa-cog"></i>
-                </a>
-                <a onclick="tabs(2)" class="tab">
-                    <i class="fa fa-tasks"></i>
-                </a>
-                
-            </nav>
-
-        </div>
-        <div class="rightbox">
-            <div class="profil tabShow">
-                <h1>Personal Info</h1>
-                <h2>Name </h2>
-                <input type="text" class="input" value="Max Mustermann">
-                <h2>Geburtstag</h2>
-                <input type="text" class="input" value="April 20, 1999">
-                <h2>Email</h2>
-                <input type="email" class="input" value="">
-                <h2>Passwort</h2>
-                <input type="password" class="input" value="brightcode">
-                <h2>Geschlecht</h2>
-                <select>
-                    <option value="männlich">männlich</option>
-                    <option value="weiblich">weiblich</option>
-                    <option value="divers">divers</option>
-                </select>
-                <h2>Größe</h2>
-                <input type="text" class="input" value="180cm">
-                <button class="btn">Update</button>
+    <div class="main">
+        <div class="Profil">
+            <div class="Profil-Header">
+                <img src="../img/Logo.png" alt="Logo" class="Logo-img">
+                <div class="Profil-text-container">
+                    <h1 class="website-title">Gym Diary</h1>
+                    <p class="website-email">gymdiary@example.com</p>
+                </div>
             </div>
-            <div class="perosnal settings tabshow">
-                <h1>Personal Info</h1>
-                <h2>Name </h2>
-                <input type="text" class="input" value="Max Mustermann">
-                <h2>Geburtstag</h2>
-                <input type="text" class="input" value="April 20, 1999">
-                <h2>Email</h2>
-                <input type="email" class="input" value="">
-                <h2>Passwort</h2>
-                <input type="password" class="input" value="brightcode">
-                <h2>Geschlecht</h2>
-                <select>
-                    <option value="männlich">männlich</option>
-                    <option value="weiblich">weiblich</option>
-                    <option value="divers">divers</option>
-                </select>
-                <h2>Größe</h2>
-                <input type="text" class="input" value="180cm">
-                <button class="btn">Update</button>
+
+            <div class="menu">
+                <a href="#" class="menu-link"><i class="fa-solid fa-circle-user menu-icon"></i>Benutzer</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-gear menu-icon"></i>Benutzereinstellungen</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-shield-halved menu-icon"></i>Privatsphäre</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-envelope menu-icon"></i>Kontaktanfrage</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a>
             </div>
         </div>
 
+        <form class="account">
+            <div class="account-header">
+                <h1 class="account-title">Profileinstellungen</h1>
+                <div class="btn-container">
+                    <button class=" btn-zurück">Zurück</button>
+                    <button class=" btn-speichern">Speichern</button>
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Vorname</label>
+                    <input type="text" placeholder="Vorname" required>
+                </div>
+                <div class="input-container">
+                    <label>Nachname</label>
+                    <input type="text" placeholder="Nachname" required>
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <label>Telefonnummer</label>
+                    <input type="text" placeholder="Telefonnummer" required>
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Adresse</label>
+                    <textarea placeholder="Adresse" required></textarea>
+                </div>
+            </div>
+        </form>
     </div>
-</div>
 </body>
 </html>
