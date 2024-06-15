@@ -28,55 +28,59 @@
                     <i class="fa fa-user"></i>
                 </a>
                 <a onclick="tabs(1)" class="tab">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-cog"></i>
                 </a>
                 <a onclick="tabs(2)" class="tab">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-tasks"></i>
                 </a>
-                <a onclick="tabs(3)" class="tab">
-                    <i class="fa fa-user"></i>
-                </a>
+                
             </nav>
 
         </div>
-
-    </div>
-    <form>
-        <div class="User Settings">
-            <h2>Benutzerinformationen</h2>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" required>
-            </div>
-            <div>
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Passwort:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div>
-                <label for="geburtstag">Geburtstag:</label>
-                <input type="date" id="geburtstag" name="geburtstag" required>
-            </div>
-            <div>
-                <label for="geschlecht">Geschlecht:</label>
-                <select id="geschlecht" name="geschlecht" required>
+        <div class="rightbox">
+            <div class="profil tabShow">
+                <h1>Personal Info</h1>
+                <h2>Name </h2>
+                <input type="text" class="input" value="Max Mustermann">
+                <h2>Geburtstag</h2>
+                <input type="text" class="input" value="April 20, 1999">
+                <h2>Email</h2>
+                <input type="email" class="input" value="">
+                <h2>Passwort</h2>
+                <input type="password" class="input" value="brightcode">
+                <h2>Geschlecht</h2>
+                <select>
                     <option value="männlich">männlich</option>
                     <option value="weiblich">weiblich</option>
                     <option value="divers">divers</option>
                 </select>
+                <h2>Größe</h2>
+                <input type="text" class="input" value="180cm">
+                <button class="btn">Update</button>
             </div>
-            <div>
-                <input type="submit" value="Speichern">
+            <div class="perosnal settings tabshow">
+                <h1>Personal Info</h1>
+                <h2>Name </h2>
+                <input type="text" class="input" value="Max Mustermann">
+                <h2>Geburtstag</h2>
+                <input type="text" class="input" value="April 20, 1999">
+                <h2>Email</h2>
+                <input type="email" class="input" value="">
+                <h2>Passwort</h2>
+                <input type="password" class="input" value="brightcode">
+                <h2>Geschlecht</h2>
+                <select>
+                    <option value="männlich">männlich</option>
+                    <option value="weiblich">weiblich</option>
+                    <option value="divers">divers</option>
+                </select>
+                <h2>Größe</h2>
+                <input type="text" class="input" value="180cm">
+                <button class="btn">Update</button>
             </div>
         </div>
-    </form>
+
+    </div>
 </div>
 </body>
 </html>
