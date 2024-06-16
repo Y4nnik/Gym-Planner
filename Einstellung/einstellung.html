@@ -6,6 +6,7 @@
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="einstellung.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -18,5 +19,226 @@
             <a href="../Einstellung/einstellung.html" class="active">Einstellungen</a>
         </div>
     </div>
+    <div class="main">
+        <div class="Profil">
+            <div class="Profil-Header">
+                <img src="../img/Logo.png" alt="Logo" class="Logo-img">
+                <div class="Profil-text-container">
+                    <h1 class="website-title">Gym Diary</h1>
+                    <p class="website-email">gymdiary@example.com</p>
+                </div>
+            </div>
+
+            <div class="menu">
+                <a href="#" class="menu-link active" onclick="tabs(0)">
+                    <i class="fa-solid fa-circle-user menu-icon"></i>Benutzer</a>
+                <a href="#" class="menu-link" onclick="tabs(1)">
+                    <i class="fa-solid fa-gear menu-icon"></i>Benutzereinstellungen</a>
+                <a href="#" class="menu-link" onclick="tabs(2)">
+                    <i class="fa-solid fa-shield-halved menu-icon"></i>Privatsphäre</a>
+                <a href="#" class="menu-link" onclick="tabs(3)">
+                    <i class="fa-solid fa-envelope menu-icon"></i>Kontaktanfrage</a>
+                <a href="#" class="menu-link" onclick="tabs(4)">
+                    <i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a>
+            </div>
+        </div>
+
+        <div class="tab-content" id="benutzer">
+            <form class="settings-content">
+                <div class="settings-content-header">
+                    <h1 class="settings-title">Profileinstellungen</h1>
+                    <div class="btn-container">
+                        <button class=" btn-zurück">Abbrechen</button>
+                        <button class=" btn-speichern">Speichern</button>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Vorname</label>
+                        <input type="text" placeholder="Vorname" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Nachname</label>
+                        <input type="text" placeholder="Nachname" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Email</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Telefonnummer</label>
+                        <input type="text" placeholder="Telefonnummer" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Adresse</label>
+                        <textarea placeholder="Adresse" required></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="tab-content" id="benutzereinstellungen" style="display:none;">
+            <form class="settings-content">
+                <div class="settings-content-header">
+                    <h1 class="settings-title">Benutzereinstellungen</h1>
+                    <div class="btn-container">
+                        <button class=" btn-zurück">Abbrechen</button>
+                        <button class=" btn-speichern">Speichern</button>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Geschlecht</label>
+                        <select id="Geschlecht">
+                            <option value="männlich">männlich</option>
+                            <option value="weiblich">weiblich</option>
+                            <option value="divers">divers</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Größe in cm</label>
+                        <div class="range-slider">
+                            <input type="range" min="0" max="215" value="175" class="slider" step="1">
+                            <div class="slider-thumb">
+                                <div class="tooltip"></div>
+                            </div>
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Gewicht in kg</label>
+                        <input type="number" value="90.4" step=".10" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Aktivitätslevel</label>
+                        <select id="Aktivitätslevel" >
+                            <option value="Inaktiv">Inaktiv</option>
+                            <option value="Leicht aktiv">Leicht aktiv</option>
+                            <option value="Mittel aktiv">Aktiv</option>
+                            <option value="Sehr aktiv">Sehr aktiv</option>
+                            <option value="Profisportler">Profisportler</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="tab-content" id="privatsphaere" style="display:none;">
+            <form class="settings-content">
+                <div class="settings-content-header">
+                    <h1 class="settings-title">Privatsphäre</h1>
+                    <div class="btn-container">
+                        <button class=" btn-zurück">Zurück</button>
+                        <button class=" btn-speichern">Speichern</button>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Push-Benachrichtigungen</label>
+                        <input type="text" placeholder="Vorname" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Personalisiserte Werbung</label>
+                        <input type="checkbox" placeholder="Vorname" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Datenschutzbestimmung</label>
+                        <input type="radio" placeholder="Vorname" required>
+                    </div>
+                </div>
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Nutzungsbedingunen</label>
+                        <input type="radio" placeholder="Vorname" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="tab-content" id="kontaktanfrage" style="display:none;">
+            <form class="settings-content">
+                <div class="settings-content-header">
+                    <h1 class="settings-title">Kontaktformular</h1>
+                    <div class="btn-container">
+                        <button class=" btn-speichern">Absenden</button>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Vorname</label>
+                        <input type="text" placeholder="Vorname" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Nachname</label>
+                        <input type="text" placeholder="Nachname" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Email</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Telefonnummer</label>
+                        <input type="text" placeholder="Telefonnummer" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Grund</label>
+                        <select id="Kontaktgrund">
+                            <option value="Anfrage">Anfrage</option>
+                            <option value="Beschwerde">Beschwerde</option>
+                            <option value="Sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label>Kontaktaufnahme (primär)</label>
+                        <select id="Kontaktaufnahme">
+                            <option value="Email">Anfrage</option>
+                            <option value="Telefon">Beschwerde</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Anliegen</label>
+                        <textarea placeholder="Bitte schildern sie ihr Anliegen" required></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-content" id="logout" style="display:none;">
+            <h2>Privatsphäre</h2>
+            <p>Dies ist der Inhalt für den Privatsphäre-Tab.</p>
+        </div>
+    </div>
+    <script src="einstellung.js"></script>
 </body>
 </html>

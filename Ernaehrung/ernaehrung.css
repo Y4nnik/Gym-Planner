@@ -1,7 +1,9 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .nav-bar {
     display: flex;
@@ -72,4 +74,233 @@ body {
 }
 .active:hover {
     color: black;
+}
+
+.main {
+    padding: 2em;
+}
+.week-days {
+    background-color: var(--secondarybackground);
+    display: flex;
+    border-radius: 1em;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.day {
+    background-color: var(--mainbackground);
+    color: white;
+    padding: 1em;
+    border-radius: 50%;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    margin: 1em;
+}
+.frame{
+    background-color: var(--secondarybackground);
+    border-radius: 1em;
+    padding: 0 1em;
+    width: auto;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    gap: 0;
+    grid-template-areas:
+    "heading"
+    "calories-overview"
+    "naehrwerte"
+    "meal-tracking";
+}
+.heading {
+    grid-area: heading;
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+}
+
+.calories-overview {
+    grid-area: calories-overview;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    gap: 0;
+    grid-template-areas: "calories-eaten calories-left calories-planned";
+    text-align: center;
+    align-items: center;
+}
+.calories-eaten {
+    grid-area: calories-eaten;
+    color: white;
+    font-size: 1em;
+}
+.calories-left {
+    grid-area: calories-left;
+    color: white;
+    font-size: 1em;
+}
+
+svg {
+    height: 10em;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+path {
+    stroke-linecap: round;
+    stroke-width: 5;
+}
+
+path.grey {
+    stroke: var(--secondarytext);
+    stroke-dasharray:calc(40 * 3.142 * 1.85) ;
+    stroke-dashoffset: 20;
+}
+
+path.purple {
+    stroke: var(--secondarycolor);
+    stroke-dasharray: calc(40 * 3.142 * 1.85);
+    stroke-dashoffset: 230;
+    /* adjust last number for variance */
+}
+
+.calories-planned {
+    grid-area: calories-planned;
+    color: white;
+    font-size: 1em;
+}
+.calories-left p, .calories-eaten p, .calories-planned p {
+    color: var(--secondarytext);
+}
+
+.Naehrwerte {
+    grid-area: naehrwerte;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    gap: 0;
+    grid-template-areas: "carbs proteins fat";
+    text-align: center;
+    align-items: center;
+}
+.carbs {
+    grid-area: carbs;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carbs p, .proteins p, .fat p {
+    color: var(--secondarytext);
+}
+.proteins {
+    grid-area: proteins;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fat {
+    grid-area: fat;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-tracking {
+    grid-area: meal-tracking;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+.banner {
+    background-color: var(--mainbackground);
+    border-radius: 1em;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    align-items: center;
+    color: var(--secondarytext);
+}
+.banner-first-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.banner p {
+    margin-bottom: 1em;
+
+}
+.banner-second-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background-color: var(--secondarybackground);;
+    padding: 2em;
+    text-align: center;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 1.5em;
+        width: auto;
+    }
+    .week-days {
+        flex-direction: column;
+        align-items: center;
+    }
+    .day {
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        margin: 0.5em;
+    }
+}
+@media (max-width: 480px) {
+    .nav-bar img {
+        width: 75px;
+        height: 50px;
+    }
+    .nav a {
+        font-size: 1.2em;
+        padding: 10px 5px;
+    }
+    .day {
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        margin: 0.2em;
+    }
+    .banner {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
 }
