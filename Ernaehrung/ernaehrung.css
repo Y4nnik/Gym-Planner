@@ -76,6 +76,7 @@ body {
     color: black;
 }
 
+
 .main {
     padding: 2em;
 }
@@ -88,15 +89,21 @@ body {
 }
 .day {
     background-color: var(--mainbackground);
-    color: white;
+    color: #fff;
     padding: 1em;
     border-radius: 50%;
     text-align: center;
-    width: 4em;
-    height: 4em;
-    line-height: 4em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
     margin: 1em;
+    font-size: 1.5em;
 }
+.actual {
+    background-color: var(--secondarycolor);
+}
+
+
 .frame{
     background-color: var(--secondarybackground);
     border-radius: 1em;
@@ -130,6 +137,7 @@ body {
     grid-template-areas: "calories-eaten calories-left calories-planned";
     text-align: center;
     align-items: center;
+    border-bottom: var(--secondarytext) solid .15em;
 }
 .calories-eaten {
     grid-area: calories-eaten;
@@ -141,32 +149,36 @@ body {
     color: white;
     font-size: 1em;
 }
-
+.currentCalories {
+    position: relative;
+    top: -80px;
+}
+.svgCalories {
+    position: relative;
+    top: 40px;
+    left: -12px;
+}
 svg {
     height: 10em;
     width: auto;
     margin: auto;
     display: block;
 }
-
 path {
     stroke-linecap: round;
     stroke-width: 5;
 }
-
 path.grey {
     stroke: var(--secondarytext);
     stroke-dasharray:calc(40 * 3.142 * 1.85) ;
     stroke-dashoffset: 20;
 }
-
 path.purple {
     stroke: var(--secondarycolor);
     stroke-dasharray: calc(40 * 3.142 * 1.85);
     stroke-dashoffset: 230;
     /* adjust last number for variance */
 }
-
 .calories-planned {
     grid-area: calories-planned;
     color: white;
@@ -175,6 +187,7 @@ path.purple {
 .calories-left p, .calories-eaten p, .calories-planned p {
     color: var(--secondarytext);
 }
+
 
 .Naehrwerte {
     grid-area: naehrwerte;
@@ -185,6 +198,7 @@ path.purple {
     grid-template-areas: "carbs proteins fat";
     text-align: center;
     align-items: center;
+    margin-top: 2em;
 }
 .carbs {
     grid-area: carbs;
@@ -213,6 +227,21 @@ path.purple {
     flex-direction: column;
     align-items: center;
 }
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+}
+progress::-webkit-progress-bar {
+    background-color: var(--secondarytext);
+    border-radius: .4em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+    background-color: var(--secondarycolor);
+    border-radius: .4em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
 
 .meal-tracking {
     grid-area: meal-tracking;
@@ -259,7 +288,8 @@ path.purple {
     color: white;
     text-decoration: none;
 }
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
         align-items: center;
@@ -282,25 +312,5 @@ path.purple {
         height: 3em;
         line-height: 3em;
         margin: 0.5em;
-    }
-}
-@media (max-width: 480px) {
-    .nav-bar img {
-        width: 75px;
-        height: 50px;
-    }
-    .nav a {
-        font-size: 1.2em;
-        padding: 10px 5px;
-    }
-    .day {
-        width: 2.5em;
-        height: 2.5em;
-        line-height: 2.5em;
-        margin: 0.2em;
-    }
-    .banner {
-        padding: 1em;
-        margin-bottom: 1em;
     }
 }

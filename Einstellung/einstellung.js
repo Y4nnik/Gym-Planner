@@ -9,10 +9,10 @@ function tabs(tabIndex) {
 
     // Entferne die 'active' Klasse von allen Menülinks
     const menuLinks = document.querySelectorAll('.menu-link');
-    menuLinks.forEach(link => link.classList.remove('active'));
+    menuLinks.forEach(link => link.classList.remove('actual'));
 
     // Füge die 'active' Klasse zum ausgewählten Menülink hinzu
-    menuLinks[tabIndex].classList.add('active');
+    menuLinks[tabIndex].classList.add('actual');
 }
 tabs(0);
 

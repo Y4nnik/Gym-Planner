@@ -20,13 +20,13 @@
 </div>
 <div class="main">
     <div class="week-days">
-        <div class="day">Mo</div>
-        <div class="day">Di</div>
-        <div class="day">Mi</div>
-        <div class="day">Do</div>
-        <div class="day">Fr</div>
-        <div class="day">Sa</div>
-        <div class="day">So</div>
+        <div class="day" id="montag">Mo</div>
+        <div class="day" id="dienstag">Di</div>
+        <div class="day" id="mittwoch">Mi</div>
+        <div class="day" id="donnerstag">Do</div>
+        <div class="day" id="freitag">Fr</div>
+        <div class="day" id="samstag">Sa</div>
+        <div class="day" id="sonntag">So</div>
     </div>
     <div class="frame">
         <div class="heading">
@@ -38,16 +38,19 @@
                 <p>gegessen</p>
             </div>
             <div class="calories-left">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 100 100">
+                <svg class="svgCalories" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 100 100">
                     <path class="grey" d="M40,86
-             A40,40 0 1,1 60,90"
+                          A40,40 0 1,1 60,90"
                           style="fill:none;"/>
                     <path class="purple" d="M40,86
-             A40,40 0 1,1 60,90"
+                          A40,40 0 1,1 60,90"
                           style="fill:none;"/>
                 </svg>
-                <h3>2800</h3>
-                <p>offen</p>
+                <div class="currentCalories">
+                    <h3>2800</h3>
+                    <p>offen</p>
+                </div>
             </div>
             <div class="calories-planned">
                 <h3>2800</h3>
@@ -164,5 +167,9 @@
         </div>
     </div>
 </div>
+<div class="footer">
+    <a href="../AboutUs/aboutUs.html">About Us</a>
+</div>
+<script src="ernaehrung.js"></script>
 </body>
 </html>
