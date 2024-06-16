@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -224,13 +225,29 @@ path.purple {
     border-radius: 1em;
     width: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 2em;
     margin-bottom: 2em;
     text-align: center;
     align-items: center;
     color: var(--secondarytext);
+}
+.banner-first-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.banner p {
+    margin-bottom: 1em;
+
+}
+.banner-second-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 .footer {
