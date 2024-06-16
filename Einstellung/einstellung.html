@@ -6,7 +6,7 @@
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="einstellung.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -30,16 +30,16 @@
             </div>
 
             <div class="menu">
-                <a href="#" class="menu-link active" onclick="tabs(0)">
-                    <i class="fa-solid fa-circle-user menu-icon"></i>Benutzer</a>
-                <a href="#" class="menu-link" onclick="tabs(1)">
-                    <i class="fa-solid fa-gear menu-icon"></i>Benutzereinstellungen</a>
-                <a href="#" class="menu-link" onclick="tabs(2)">
-                    <i class="fa-solid fa-shield-halved menu-icon"></i>Privatsphäre</a>
-                <a href="#" class="menu-link" onclick="tabs(3)">
-                    <i class="fa-solid fa-envelope menu-icon"></i>Kontaktanfrage</a>
-                <a href="#" class="menu-link" onclick="tabs(4)">
-                    <i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</a>
+                <p class="menu-link actual" onclick="tabs(0)">
+                    <i class="fa-solid fa-circle-user menu-icon"></i>Benutzer</p>
+                <p class="menu-link" onclick="tabs(1)">
+                    <i class="fa-solid fa-gear menu-icon"></i>Benutzereinstellungen</p>
+                <p class="menu-link" onclick="tabs(2)">
+                    <i class="fa-solid fa-shield-halved menu-icon"></i>Privatsphäre</p>
+                <p class="menu-link" onclick="tabs(3)">
+                    <i class="fa-solid fa-envelope menu-icon"></i>Kontaktanfrage</p>
+                <p class="menu-link" onclick="tabs(4)">
+                    <i class="fa-solid fa-right-from-bracket menu-icon"></i>Logout</p>
             </div>
         </div>
 
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="settings-edit">
-                    <div class="input-container">
+                    <div class="input-container-slider">
                         <label>Größe in cm</label>
                         <div class="range-slider">
                             <input type="range" min="0" max="215" value="175" class="slider" step="1">
@@ -149,29 +149,33 @@
                 </div>
 
                 <div class="settings-edit">
-                    <div class="input-container">
+                    <div class="input-container privacy">
                         <label>Push-Benachrichtigungen</label>
-                        <input type="text" placeholder="Vorname" required>
+                        <input type="checkbox">
                     </div>
                 </div>
 
                 <div class="settings-edit">
-                    <div class="input-container">
+                    <div class="input-container privacy">
                         <label>Personalisiserte Werbung</label>
-                        <input type="checkbox" placeholder="Vorname" required>
+                        <input type="checkbox">
                     </div>
                 </div>
 
                 <div class="settings-edit">
-                    <div class="input-container">
+                    <div class="input-container privacy">
                         <label>Datenschutzbestimmung</label>
-                        <input type="radio" placeholder="Vorname" required>
+                        <a href="loremIpsum.html">
+                            <i class="fas fa-arrow-right svg-icon"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="settings-edit">
-                    <div class="input-container">
+                    <div class="input-container privacy">
                         <label>Nutzungsbedingunen</label>
-                        <input type="radio" placeholder="Vorname" required>
+                        <a href="loremIpsum.html">
+                            <i class="fas fa-arrow-right svg-icon"></i>
+                        </a>
                     </div>
                 </div>
             </form>
@@ -235,8 +239,16 @@
             </form>
         </div>
         <div class="tab-content" id="logout" style="display:none;">
-            <h2>Privatsphäre</h2>
-            <p>Dies ist der Inhalt für den Privatsphäre-Tab.</p>
+            <form class="settings-content">
+                <div class="settings-content-header">
+                    <h1 class="settings-title">Wollen Sie sich ausloggen?</h1>
+                    <div class="btn-container">
+                        <button onclick="location.href='../Login/login.html'"
+                                class=" btn-speichern" type="button">Logout
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <script src="einstellung.js"></script>

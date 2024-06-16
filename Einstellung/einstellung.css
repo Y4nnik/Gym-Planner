@@ -130,7 +130,7 @@ body {
 .menu-icon {
     margin-right: 1em;
 }
-.active {
+.actual {
     color: #fff;
     background-color: var(--secondarycolor);
 }
@@ -138,7 +138,7 @@ body {
     background-color: #f1f5f9;
     color: var(--secondarytext)
 }
-.active:hover{
+.actual:hover{
     background-color: var(--secondarycolor);
     color: #fff;
 }
@@ -254,9 +254,21 @@ body {
 }
 
 /*slider*/
+.input-container-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+.input-container-slider label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4em;
+    color: var(--secondarytext);
+    margin-bottom: 1.4em;
+}
 .range-slider {
     max-width: 100%;
-    margin: 1em 0;
+    margin: 1.5em 0;
     position: relative;
     display: flex;
 }
@@ -334,7 +346,7 @@ body {
 }
 .range-slider .progress {
     width: 50%;
-    height: 1em;
+    height: .8em;
     border-radius: .3em;
     background: linear-gradient(90deg, #b20d54 0%, var(--secondarycolor) 100%);
     position: absolute;
@@ -342,6 +354,18 @@ body {
     transform: translateY(-50%);
     left: 0;
     pointer-events: none;
+}
+
+.privacy {
+    display: inline;
+}
+.svg-icon {
+    color: var(--secondarycolor);
+    font-size: 2em;
+}
+.svg-icon:hover {
+    font-size: 3em;
+    text-decoration: underline;
 }
 
 
@@ -363,8 +387,17 @@ body {
         flex-direction: column;
         margin: 1em;
     }
+    .tab-content {
+        margin-left: 0;
+    }
     .input-container {
         margin: 1em;
+    }
+    .input-container-slider {
+        margin: 1em;
+    }
+    .input-container-slider input {
+        margin-right: 1em;
     }
     .input-container input {
         margin-right: 1em;

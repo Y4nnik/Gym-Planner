@@ -85,14 +85,18 @@ figure img {
 }
 .day {
     background-color: var(--mainbackground);
-    color: white;
+    color: #fff;
     padding: 1em;
     border-radius: 50%;
     text-align: center;
-    width: 4em;
-    height: 4em;
-    line-height: 4em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
     margin: 1em;
+    font-size: 1.5em;
+}
+.actual {
+    background-color: var(--secondarycolor);
 }
 .content-Tracking {
     display: flex;
