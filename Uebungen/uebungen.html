@@ -20,47 +20,15 @@
     </div>
     <main>
         <section class="search">
-            <input type="text" placeholder="Übung suchen">
-            <button><img src="search-icon.png" alt="Search"></button>
+            <input type="search" placeholder="Suche" id="searchField">
         </section>
-        <section class="exercises">
-            <div class="exercise-item">
-                <img src="placeholder.png" alt="Exercise">
-                <div>
-                    <h2>Schrägbankdrücken</h2>
-                    <p>Bank ; Multipresse<br>Brust (obere)</p>
-                </div>
-                <a href="exercise.html?exercise=schrägbankdrücken">></a>
-            </div>
-            <div class="exercise-item">
-                <img src="placeholder.png" alt="Exercise">
-                <div>
-                    <h2>Beinpresse</h2>
-                    <p>Maschine<br>Quadrizeps</p>
-                </div>
-                <a href="exercise.html?exercise=beinpresse">></a>
-            </div>
-            <div class="exercise-item">
-                <img src="placeholder.png" alt="Exercise">
-                <div>
-                    <h2>Rumänisches Kreuzheben</h2>
-                    <p>Langhantel ; Kurzhantel<br>Beinbeuger</p>
-                </div>
-                <a href="exercise.html?exercise=rumänisches-kreuzheben">></a>
-            </div>
-            <div class="exercise-item">
-                <img src="placeholder.png" alt="Exercise">
-                <div>
-                    <h2>T-Bar Rudern (breit)</h2>
-                    <p>T-Bar<br>Rücken (oberer)</p>
-                </div>
-                <a href="exercise.html?exercise=t-bar-rudern-breit">></a>
-            </div>
+        <section class="exercises" id="exercise-list">
+            <!-- Exercise items will be injected here by JavaScript -->
         </section>
     </main>
     <footer>
         <p>Footer (About Us)</p>
     </footer>
-
+    <script src="exercise.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+{
+    "exercises": [
+        {
+            "name": "Schrägbankdrücken",
+            "equipment": "Bank, Multipresse",
+            "target": "Brust (obere)",
+            "image": "exercise_resources/langhantel-bankdruecken-startposition.jpg",
+            "webp": "exercise_resources/bank.gif",
+            "details": "Detailed explanation for Schrägbankdrücken."
+        },
+        {
+            "name": "Beinpresse",
+            "equipment": "Maschine",
+            "target": "Quadrizeps",
+            "image": "exercise_resources/klassische-horizontale-beinpresse-startposition.jpg",
+            "webp": "exercise_resources/beinpresse.webp",
+            "details": "Detailed explanation for Beinpresse."
+        },
+        {
+            "name": "Rumänisches Kreuzheben",
+            "equipment": "Langhantel ; Kurzhantel",
+            "target": "Beinbeuger",
+            "image": "exercise_resources/rumaenisches-kreuzheben-startposition.png",
+            "webp": "exercise_resources/rum.gif",
+            "details": "Detailed explanation for Rumänisches Kreuzheben."
+        },
+        {
+            "name": "T-Bar Rudern (breit)",
+            "equipment": "T-Bar",
+            "target": "Rücken (oberer)",
+            "image": "exercise_resources/T-Bar.png",
+            "webp": "exercise_resources/T-Bar.webp",
+            "details": "Detailed explanation for T-Bar Rudern (breit)."
+        },
+        {
+            "name": "Butterfly",
+            "equipment": "Maschine",
+            "target": "Brust",
+            "image": "exercise_resources/Butterfly.png",
+            "webp": "exercise_resources/Butterfly.webp",
+            "details": "Beim Butterfly sitzt du an einer speziellen Maschine, platzierst deine Unterarme gegen die gepolsterten Hebel und führst deine Arme in einer fließenden Bewegung zusammen, was die Brustmuskulatur isoliert und trainiert."
+        },
+        {
+            "name": "Latziehen zur Brust",
+            "equipment": "Kabelzugmaschine",
+            "target": "Rücken (breiter)",
+            "image": "exercise_resources/Latziehen_zur_Brust.png",
+            "webp": "exercise_resources/Latziehen_zur_Brust.gif",
+            "details": "Beim Latziehen zur Brust greifst du eine Stange an einem Kabelzug oberhalb deines Kopfes und ziehst sie kontrolliert zur Brust, um den breiten Rückenmuskel zu beanspruchen."
+        },
+        {
+            "name": "Seitheben",
+            "equipment": "Kurzhanteln",
+            "target": "Schultern",
+            "image": "exercise_resources/Seitheben.png",
+            "webp": "exercise_resources/Seitheben.webp",
+            "details": "Beim Seitheben stehst du mit Kurzhanteln in beiden Händen und hebst die Arme seitlich bis auf Schulterhöhe, um die seitlichen Schultermuskeln zu trainieren."
+        },
+        {
+            "name": "Trizepsdrücken am Kabelzug",
+            "equipment": "Kabelzugmaschine",
+            "target": "Trizeps",
+            "image": "exercise_resources/Trizeps.png",
+            "webp": "exercise_resources/Trizeps.webp",
+            "details": "Trizepsdrücken am Kabelzug wird durchgeführt, indem du einen Griff oder eine Stange an einer Kabelzugstation nach unten drückst, was den Trizeps stark beansprucht und aufbaut."
+        }
+    ]
+}
