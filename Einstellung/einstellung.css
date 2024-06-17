@@ -357,14 +357,20 @@ body {
 }
 
 .privacy {
-    display: inline;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    border-bottom: 1px solid #768499;
+}
+.input-container input[type="checkbox"] {
+    width: 2.5em;
+    height: 2.5em;
 }
 .svg-icon {
     color: var(--secondarycolor);
     font-size: 2em;
 }
 .svg-icon:hover {
-    font-size: 3em;
     text-decoration: underline;
 }
 
@@ -443,6 +449,19 @@ body {
     }
     .neu-range-slider {
         width: 100%;
+    }
+    .privacy {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .input-container input[type="checkbox"] {
+        width: 2em;
+        height: 2em;
+    }
+    .svg-icon {
+        margin-right: .5em;
     }
 }
 
