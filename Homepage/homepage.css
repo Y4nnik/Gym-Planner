@@ -141,34 +141,6 @@ iframe {
     height: 50em;
     border: none;
 }
-.content-Informations {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2em;
-}
-.content-Informations h3 {
-     color: white;
- }
-.content-Informations p {
-    color: var(--secondarytext);
-}
-.content-Informations a {
-    color: var(--secondarycolor);
-    font-size: 2em;
-    text-decoration: none;
-}
-.banner {
-    background-color: var(--secondarybackground);
-    border-radius: 1em;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2em;
-    margin-bottom: 2em;
-    text-align: center;
-    align-items: center;
-}
 .footer {
     background-color: var(--secondarybackground);;
     padding: 2em 0;

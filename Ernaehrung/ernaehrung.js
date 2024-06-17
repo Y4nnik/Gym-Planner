@@ -12,3 +12,7 @@ document.querySelector('.actual')?.classList.remove('actual');
 
 // Neue Klasse "actual" zum aktuellen Tag hinzufügen
 document.getElementById(day).classList.add('actual');
+
+const proteinFactor = 4;
+const fatFactor = 9;
+const carbFactor = 4;
