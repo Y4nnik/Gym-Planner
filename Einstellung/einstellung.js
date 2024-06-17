@@ -1,3 +1,12 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Navigation Dropdown
+    const navBar = document.querySelector('.nav-bar');
+    navBar.addEventListener('click', () => {
+        navBar.classList.toggle('open');
+    });
+});
+
 function tabs(tabIndex) {
     // Alle Tab-Inhalte verbergen
     const tabContents = document.querySelectorAll('.tab-content');
