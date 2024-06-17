@@ -1,3 +1,17 @@
+var datum = new Date();
+var wochentag = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+
+// Aktuellen Wochentag ermitteln
+var currentDay = datum.getDay();
+
+// Entsprechenden Tag-String aus Array holen
+var day = wochentag[currentDay].toLowerCase();
+
+// Aktuelle Klasse "actual" entfernen
+document.querySelector('.actual')?.classList.remove('actual');
+
+// Neue Klasse "actual" zum aktuellen Tag hinzufügen
+document.getElementById(day).classList.add('actual');
 const proteinFactor = 4;
 const fatFactor = 9;
 const carbFactor = 4;
@@ -118,18 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Neuladen der Dropdowns bei Änderung der Fenstergröße
     window.addEventListener('resize', createDropdowns);
-
-    // Datum und Wochentag
-    const datum = new Date();
-    const wochentag = ["sonntag", "montag", "dienstag", "mittwoch", "donnerstag", "freitag", "samstag"];
-    const currentDay = datum.getDay();
-    const day = wochentag[currentDay];
-
-    document.getElementById(day).classList.add('actual');
-    const weekDaysSelect = document.querySelector('.week-days-select');
-    if (weekDaysSelect) {
-        weekDaysSelect.value = day;
-    }
 });
 
 
