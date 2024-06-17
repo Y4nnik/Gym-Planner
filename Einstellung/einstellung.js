@@ -1,32 +1,137 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation Dropdown
     const navBar = document.querySelector('.nav-bar');
     navBar.addEventListener('click', () => {
         navBar.classList.toggle('open');
     });
+
+    // Initialize tabs
+    tabs(0);
+
+    // Load saved data
+    loadUserData('benutzer');
+    loadUserData('benutzereinstellungen');
+    loadUserData('privatsphaere');
+
+    // Add event listeners for the buttons
+    addEventListeners('benutzer');
+    addEventListeners('benutzereinstellungen');
+    addEventListeners('privatsphaere');
+
+    // Add event listener for the contact form
+    const contactFormButton = document.querySelector('#kontaktanfrage .btn-speichern');
+    contactFormButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        showSuccessMessage();
+        clearContactForm();
+    });
 });
 
 function tabs(tabIndex) {
-    // Alle Tab-Inhalte verbergen
+    // Hide all tab contents
     const tabContents = document.querySelectorAll('.tab-content');
     tabContents.forEach(content => content.style.display = 'none');
 
-    // Den ausgewählten Tab-Inhalt anzeigen
+    // Show the selected tab content
     const tabIds = ['benutzer', 'benutzereinstellungen', 'privatsphaere', 'kontaktanfrage', 'logout'];
     document.getElementById(tabIds[tabIndex]).style.display = 'block';
 
-    // Entferne die 'active' Klasse von allen Menülinks
+    // Remove the 'actual' class from all menu links
     const menuLinks = document.querySelectorAll('.menu-link');
     menuLinks.forEach(link => link.classList.remove('actual'));
 
-    // Füge die 'active' Klasse zum ausgewählten Menülink hinzu
+    // Add the 'actual' class to the selected menu link
     menuLinks[tabIndex].classList.add('actual');
 }
-tabs(0);
 
+function loadUserData(tab) {
+    const fields = {
+        benutzer: ['vorname', 'nachname', 'email', 'telefon', 'plz', 'ort', 'strasse', 'nr'],
+        benutzereinstellungen: ['geschlecht', 'kalorien', 'groesse', 'gewicht', 'aktivitätslevel'],
+        privatsphaere: ['benachrichtigung', 'werbung']
+    };
+
+    fields[tab].forEach(field => {
+        const savedValue = localStorage.getItem(field);
+        const element = document.getElementById(field);
+        if (savedValue !== null) {
+            if (element.type === 'checkbox') {
+                element.checked = savedValue === 'true';
+            } else {
+                element.value = savedValue;
+            }
+        }
+    });
+
+    if (tab === 'benutzereinstellungen') {
+        const slider = document.getElementById('groesse');
+        const progress = slider.closest('.range-slider').querySelector('.progress');
+        const thumb = slider.closest('.range-slider').querySelector('.slider-thumb');
+        const tooltip = slider.closest('.range-slider').querySelector('.tooltip');
+
+        function customSlider() {
+            const maxVal = slider.getAttribute("max");
+            const val = (slider.value / maxVal) * 100 + "%";
+
+            tooltip.innerHTML = slider.value;
+            progress.style.width = val;
+            thumb.style.left = val;
+        }
+        customSlider();
+    }
+}
+
+function saveUserData(tab) {
+    const fields = {
+        benutzer: ['vorname', 'nachname', 'email', 'telefon', 'plz', 'ort', 'strasse', 'nr'],
+        benutzereinstellungen: ['geschlecht', 'kalorien', 'groesse', 'gewicht', 'aktivitätslevel'],
+        privatsphaere: ['benachrichtigung', 'werbung']
+    };
+
+    fields[tab].forEach(field => {
+        const element = document.getElementById(field);
+        const value = element.type === 'checkbox' ? element.checked : element.value;
+        localStorage.setItem(field, value);
+    });
+}
+
+function addEventListeners(tab) {
+    const saveButton = document.querySelector(`#${tab} .btn-speichern`);
+    const cancelButton = document.querySelector(`#${tab} .btn-zurück`);
+
+    saveButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        saveUserData(tab);
+    });
+
+    cancelButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        loadUserData(tab);
+    });
+}
+
+function showSuccessMessage() {
+    const successMessage = document.getElementById('success-message');
+    successMessage.style.display = 'inline-block';
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+    }, 2500);
+}
+
+function clearContactForm() {
+    const contactFormFields = ['kontakt-vorname', 'kontakt-nachname', 'kontakt-email', 'kontakt-telefon', 'kontaktgrund', 'kontaktaufnahme', 'anliegen'];
+    contactFormFields.forEach(field => {
+        const element = document.getElementById(field);
+        if (element.type === 'select-one') {
+            element.selectedIndex = 0;
+        } else {
+            element.value = '';
+        }
+    });
+}
+
+// Range slider logic
 const container = document.querySelectorAll(".range-slider");
-
 for (let i = 0; i < container.length; i++) {
     const slider = container[i].querySelector(".slider");
     const thumb = container[i].querySelector(".slider-thumb");
@@ -35,7 +140,7 @@ for (let i = 0; i < container.length; i++) {
 
     function customSlider() {
         const maxVal = slider.getAttribute("max");
-        const val = (slider.value / maxVal) *100 + "%";
+        const val = (slider.value / maxVal) * 100 + "%";
 
         tooltip.innerHTML = slider.value;
         progress.style.width = val;
@@ -47,3 +152,27 @@ for (let i = 0; i < container.length; i++) {
         customSlider();
     })
 }
+
+// Calorie to macronutrient breakdown
+const kalorienInput = document.getElementById('kalorien');
+kalorienInput.addEventListener('input', () => {
+    const kalorien = parseFloat(kalorienInput.value);
+
+    const proteinsCal = Math.round(kalorien * 0.30);
+    const carbsCal = Math.round(kalorien * 0.385);
+    const fatCal = Math.round(kalorien * 0.315);
+
+    const proteinsGramm = Math.round(proteinsCal / 4);
+    const carbsGramm = Math.round(carbsCal / 4);
+    const fatGramm = Math.round(fatCal / 9);
+
+    console.log(`Proteins: ${proteinsCal} cal, ${proteinsGramm} g`);
+    console.log(`Carbs: ${carbsCal} cal, ${carbsGramm} g`);
+    console.log(`Fat: ${fatCal} cal, ${fatGramm} g`);
+
+    // Store values in localStorage
+    window.localStorage.setItem('kalorienInput', kalorien);
+    window.localStorage.setItem('proteinsGramm', proteinsGramm);
+    window.localStorage.setItem('carbsGramm', carbsGramm);
+    window.localStorage.setItem('fatGramm', fatGramm);
+});

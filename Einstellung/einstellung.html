@@ -55,45 +55,45 @@
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Vorname</label>
-                        <input type="text" placeholder="Vorname" required>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" value="Max" required>
                     </div>
                     <div class="input-container">
-                        <label>Nachname</label>
-                        <input type="text" placeholder="Nachname" required>
-                    </div>
-                </div>
-
-                <div class="settings-edit">
-                    <div class="input-container">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-container">
-                        <label>Telefonnummer</label>
-                        <input type="text" placeholder="Telefonnummer" required>
+                        <label for="nachname">Nachname</label>
+                        <input type="text" id="nachname" value="Mustermann" required>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Postleitzahl</label>
-                        <input type="number" min="0" max="99999" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="max.mustermann@muster.de" required>
                     </div>
                     <div class="input-container">
-                        <label>Ort</label>
-                        <input type="text" placeholder="Ort" required>
+                        <label for="telefon">Telefonnummer</label>
+                        <input type="text" id="telefon" value="1234567890" required>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Straße</label>
-                        <input type="text" placeholder="Straße" required>
+                        <label for="plz">Postleitzahl</label>
+                        <input type="number" id="plz" min="0" max="99999" value="12345" required>
                     </div>
                     <div class="input-container">
-                        <label>Hausnummer</label>
-                        <input type="number" min="0" required>
+                        <label for="ort">Ort</label>
+                        <input type="text" id="ort" value="Musterstadt" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label for="strasse">Straße</label>
+                        <input type="text" id="strasse" value="Musterstraße" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="nr">Hausnummer</label>
+                        <input type="number" id="nr" min="0" value="9" required>
                     </div>
                 </div>
             </form>
@@ -112,24 +112,24 @@
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Geschlecht</label>
-                        <select id="Geschlecht">
+                        <label for="geschlecht">Geschlecht</label>
+                        <select id="geschlecht">
                             <option value="männlich">männlich</option>
                             <option value="weiblich">weiblich</option>
                             <option value="divers">divers</option>
                         </select>
                     </div>
                     <div class="input-container">
-                        <label>Zielkalorien</label>
-                        <input type="number" value="2800" step="10" required>
+                        <label for="kalorien">Zielkalorien</label>
+                        <input type="number" id="kalorien" value="2800" step="10" required>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container-slider">
-                        <label>Größe in cm</label>
+                        <label for="groesse">Größe in cm</label>
                         <div class="range-slider">
-                            <input type="range" min="0" max="215" value="175" class="slider" step="1">
+                            <input type="range" id="groesse" min="0" max="215" value="180" class="slider" step="1">
                             <div class="slider-thumb">
                                 <div class="tooltip"></div>
                             </div>
@@ -140,14 +140,14 @@
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Gewicht in kg</label>
-                        <input type="number" value="90.4" step=".10" required>
+                        <label for="gewicht">Gewicht in kg</label>
+                        <input type="number" id="gewicht" value="85.5" step=".10" required>
                     </div>
                     <div class="input-container">
-                        <label>Aktivitätslevel</label>
-                        <select id="Aktivitätslevel" >
+                        <label for="aktivitätslevel">Aktivitätslevel</label>
+                        <select id="aktivitätslevel" >
                             <option value="Inaktiv">Inaktiv</option>
-                            <option value="Leicht aktiv">Leicht aktiv</option>
+                            <option value="Leicht aktiv" selected>Leicht aktiv</option>
                             <option value="Mittel aktiv">Aktiv</option>
                             <option value="Sehr aktiv">Sehr aktiv</option>
                             <option value="Profisportler">Profisportler</option>
@@ -169,15 +169,15 @@
 
                 <div class="settings-edit">
                     <div class="input-container privacy">
-                        <label>Push-Benachrichtigungen</label>
-                        <input type="checkbox" checked>
+                        <label for="benachrichtigung">Push-Benachrichtigungen</label>
+                        <input type="checkbox" id="benachrichtigung" checked>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container privacy">
-                        <label>Personalisiserte Werbung</label>
-                        <input type="checkbox">
+                        <label for="werbung">Personalisiserte Werbung</label>
+                        <input type="checkbox" id="werbung">
                     </div>
                 </div>
 
@@ -204,6 +204,9 @@
             <form class="settings-content">
                 <div class="settings-content-header">
                     <h1 class="settings-title">Kontaktformular</h1>
+                    <div id="success-message" class="success-message">
+                        <i class="fas fa-check-circle"></i> Formular wurde erfolgreich abgesendet!
+                    </div>
                     <div class="btn-container">
                         <button class=" btn-speichern">Absenden</button>
                     </div>
@@ -211,52 +214,53 @@
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Vorname</label>
-                        <input type="text" placeholder="Vorname" required>
+                        <label for="kontakt-vorname">Vorname</label>
+                        <input type="text" id="kontakt-vorname" placeholder="Vorname" required>
                     </div>
                     <div class="input-container">
-                        <label>Nachname</label>
-                        <input type="text" placeholder="Nachname" required>
-                    </div>
-                </div>
-
-                <div class="settings-edit">
-                    <div class="input-container">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-container">
-                        <label>Telefonnummer</label>
-                        <input type="text" placeholder="Telefonnummer" required>
+                        <label for="kontakt-nachname">Nachname</label>
+                        <input type="text" id="kontakt-nachname" placeholder="Nachname" required>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Grund</label>
-                        <select id="Kontaktgrund">
+                        <label for="kontakt-email">Email</label>
+                        <input type="email" id="kontakt-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="kontakt-telefon">Telefonnummer</label>
+                        <input type="number" id="kontakt-telefon" placeholder="Telefonnummer" min="0" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label for="kontaktgrund">Grund</label>
+                        <select id="kontaktgrund">
                             <option value="Anfrage">Anfrage</option>
                             <option value="Beschwerde">Beschwerde</option>
                             <option value="Sonstiges">Sonstiges</option>
                         </select>
                     </div>
                     <div class="input-container">
-                        <label>Kontaktaufnahme (primär)</label>
-                        <select id="Kontaktaufnahme">
-                            <option value="Email">Anfrage</option>
-                            <option value="Telefon">Beschwerde</option>
+                        <label for="kontaktaufnahme">Kontaktaufnahme (primär)</label>
+                        <select id="kontaktaufnahme">
+                            <option value="Email">Email</option>
+                            <option value="Telefon">Telefon</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Anliegen</label>
-                        <textarea placeholder="Bitte schildern sie ihr Anliegen" required></textarea>
+                        <label for="anliegen">Anliegen</label>
+                        <textarea id="anliegen" placeholder="Bitte schildern sie ihr Anliegen" required></textarea>
                     </div>
                 </div>
             </form>
         </div>
+
         <div class="tab-content" id="logout" style="display:none;">
             <form class="settings-content">
                 <div class="settings-content-header">

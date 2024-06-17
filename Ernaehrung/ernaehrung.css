@@ -262,6 +262,13 @@ progress::-webkit-progress-value {
     align-items: center;
     color: var(--secondarytext);
 }
+.add-icon {
+    transition: all 0.3s ease;
+}
+
+.add-icon:hover {
+    transform: scale(1.8);
+}
 .banner-first-row {
     display: flex;
     justify-content: space-between;
