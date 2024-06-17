@@ -373,6 +373,23 @@ body {
 .svg-icon:hover {
     text-decoration: underline;
 }
+.success-message {
+    display: none;
+    background-color: var(--secondarycolor);
+    color: white;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 2em;
+    font-size: 1em;
+    margin-top: 1em;
+    text-align: center;
+    cursor: default;
+}
+
+.success-message i {
+    color:green;
+    margin-right: .5em;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -462,6 +479,9 @@ body {
     }
     .svg-icon {
         margin-right: .5em;
+    }
+    .success-message {
+        margin-bottom: 1.5em;
     }
 }
 

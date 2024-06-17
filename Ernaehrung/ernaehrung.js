@@ -12,6 +12,7 @@ document.querySelector('.actual')?.classList.remove('actual');
 
 // Neue Klasse "actual" zum aktuellen Tag hinzufügen
 document.getElementById(day).classList.add('actual');
+
 const proteinFactor = 4;
 const fatFactor = 9;
 const carbFactor = 4;
@@ -132,5 +133,80 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Neuladen der Dropdowns bei Änderung der Fenstergröße
     window.addEventListener('resize', createDropdowns);
-});
 
+    // Get the values from local storage
+    const kalorienInput = parseInt(window.localStorage.getItem('kalorienInput'));
+    const proteinsGramm = parseInt(window.localStorage.getItem('proteinsGramm'));
+    const carbsGramm = parseInt(window.localStorage.getItem('carbsGramm'));
+    const fatGramm = parseInt(window.localStorage.getItem('fatGramm'));
+
+    // Set the initial values
+    document.querySelector('.calories-planned h3').innerText = kalorienInput;
+    document.querySelector('.calories-left h3').innerText = kalorienInput;
+    document.getElementById('carbs-value').innerText = `0 / ${carbsGramm}g`;
+    document.getElementById('proteins-value').innerText = `0 / ${proteinsGramm}g`;
+    document.getElementById('fat-value').innerText = `0 / ${fatGramm}g`;
+
+    // Function to update the values
+    function updateValues(event) {
+        // Get the parent banner of the clicked add button
+        const banner = event.target.closest('.banner');
+
+        // Get input values
+        const inputCarbs = banner.querySelector('.input-carbs').value;
+        const inputProteins = banner.querySelector('.input-proteins').value;
+        const inputFat = banner.querySelector('.input-fat').value;
+
+        // Validate inputs
+        if (inputCarbs === '' || inputProteins === '' || inputFat === '') {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Calculate the calories
+        const carbsCalories = parseInt(inputCarbs) * carbFactor;
+        const proteinsCalories = parseInt(inputProteins) * proteinFactor;
+        const fatCalories = parseInt(inputFat) * fatFactor;
+        const totalCalories = carbsCalories + proteinsCalories + fatCalories;
+
+        // Update the calories-eaten value
+        const caloriesEatenElement = document.querySelector('.calories-eaten h3');
+        const currentCaloriesEaten = parseInt(caloriesEatenElement.innerText) || 0;
+        const newCaloriesEaten = currentCaloriesEaten + totalCalories;
+        caloriesEatenElement.innerText = newCaloriesEaten;
+
+        // Update the carbs value
+        const carbsValueElement = document.getElementById('carbs-value');
+        const currentCarbs = parseInt(carbsValueElement.innerText.split('/')[0]) || 0;
+        carbsValueElement.innerText = `${currentCarbs + parseInt(inputCarbs)} / ${carbsGramm}g`;
+        document.getElementById('carbs').value = ((currentCarbs + parseInt(inputCarbs)) / carbsGramm) * 100;
+
+        // Update the proteins value
+        const proteinsValueElement = document.getElementById('proteins-value');
+        const currentProteins = parseInt(proteinsValueElement.innerText.split('/')[0]) || 0;
+        proteinsValueElement.innerText = `${currentProteins + parseInt(inputProteins)} / ${proteinsGramm}g`;
+        document.getElementById('proteins').value = ((currentProteins + parseInt(inputProteins)) / proteinsGramm) * 100;
+
+        // Update the fat value
+        const fatValueElement = document.getElementById('fat-value');
+        const currentFat = parseInt(fatValueElement.innerText.split('/')[0]) || 0;
+        fatValueElement.innerText = `${currentFat + parseInt(inputFat)} / ${fatGramm}g`;
+        document.getElementById('fat').value = ((currentFat + parseInt(inputFat)) / fatGramm) * 100;
+
+        // Update the calories-left value
+        const caloriesLeftElement = document.querySelector('.calories-left h3');
+        const newCaloriesLeft = kalorienInput - newCaloriesEaten;
+        caloriesLeftElement.innerText = newCaloriesLeft;
+
+        // Clear input fields
+        banner.querySelector('.input-carbs').value = '';
+        banner.querySelector('.input-proteins').value = '';
+        banner.querySelector('.input-fat').value = '';
+    }
+
+    // Get all add buttons (images) and attach click event listener
+    const addButtons = document.querySelectorAll('.banner img[alt="add icon"]');
+    addButtons.forEach(function (button) {
+        button.addEventListener('click', updateValues);
+    });
+});
