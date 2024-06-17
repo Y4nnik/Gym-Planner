@@ -230,7 +230,8 @@ iframe {
         flex-direction: column;
     }
     .card {
-        min-width: 100%;
+        min-width: 90%;
+        margin-bottom: 1em;
     }
     iframe {
         height: 100%;
