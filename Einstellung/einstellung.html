@@ -77,8 +77,23 @@
 
                 <div class="settings-edit">
                     <div class="input-container">
-                        <label>Adresse</label>
-                        <textarea placeholder="Adresse" required></textarea>
+                        <label>Postleitzahl</label>
+                        <input type="number" min="0" max="99999" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Ort</label>
+                        <input type="text" placeholder="Ort" required>
+                    </div>
+                </div>
+
+                <div class="settings-edit">
+                    <div class="input-container">
+                        <label>Straße</label>
+                        <input type="text" placeholder="Straße" required>
+                    </div>
+                    <div class="input-container">
+                        <label>Hausnummer</label>
+                        <input type="number" min="0" required>
                     </div>
                 </div>
             </form>
@@ -103,6 +118,10 @@
                             <option value="weiblich">weiblich</option>
                             <option value="divers">divers</option>
                         </select>
+                    </div>
+                    <div class="input-container">
+                        <label>Zielkalorien</label>
+                        <input type="number" value="2800" step="10" required>
                     </div>
                 </div>
 
