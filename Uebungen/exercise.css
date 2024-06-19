@@ -1,6 +1,18 @@
-main {
-    background-color: #34495e;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
+
+.returnBtn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.exercise-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+}
+.exercise-detail p{
+    width: 35em;
+    text-align: center;
 }
