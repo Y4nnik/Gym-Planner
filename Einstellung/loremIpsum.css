@@ -111,3 +111,56 @@ p{
     margin: 1em 2em;
     color: var(--secondarytext);
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar hr {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin: 10px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-bar::after {
+        content: '\25BC'; /* Down arrow */
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        color: var(--secondarycolor); /* Pfeil in der Farbe secondarycolor */
+    }
+
+    .nav-bar.open .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 1.5em;
+        width: auto;
+    }
+
+    .settings-content {
+        margin: 0;
+    }
+    .settings-content-header {
+        flex-direction: column;
+    }
+    .settings-title {
+        font-size: 1.5em;
+    }
+}
