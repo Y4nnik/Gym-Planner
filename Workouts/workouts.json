@@ -1,0 +1,31 @@
+{
+    "workouts": [
+        {
+            "name": "Push Workout",
+            "description": "A workout focused on pushing exercises targeting the chest, shoulders, and triceps.",
+            "exercises": [
+                "Schrägbankdrücken",
+                "Butterfly",
+                "Trizepsdrücken am Kabelzug"
+            ]
+        },
+        {
+            "name": "Pull Workout",
+            "description": "A workout focused on pulling exercises targeting the back and biceps.",
+            "exercises": [
+                "Kreuzheben",
+                "Klimmzüge",
+                "Bizepscurls"
+            ]
+        },
+        {
+            "name": "Leg Workout",
+            "description": "A workout focused on exercises targeting the legs.",
+            "exercises": [
+                "Beinpresse",
+                "Kniebeugen",
+                "Beinstrecker"
+            ]
+        }
+    ]
+}
