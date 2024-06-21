@@ -480,6 +480,9 @@ footer a {
     .visible {
         display: block !important;
     }
+    footer {
+        font-size: 0.5em;
+    }
     
 }
 
