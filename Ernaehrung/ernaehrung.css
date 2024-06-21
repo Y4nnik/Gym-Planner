@@ -450,7 +450,7 @@ footer a {
         align-items: center;
         z-index: 0;
         position: relative;
-        top: -162em;
+        top: -164em;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -493,6 +493,6 @@ footer a {
 
 @media screen and (max-width: 460px){
     .selected-calories-container {
-        top: -168em;
+        top: -169em;
     }
 }
