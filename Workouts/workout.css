@@ -198,6 +198,7 @@ footer a {
 @media screen and (max-width: 768px) {
     footer {
         font-size: 0.5em;
+        margin-top: 4em;
     }
 }
 @media screen and (max-width: 380px) {
