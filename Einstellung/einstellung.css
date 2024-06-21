@@ -392,40 +392,16 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1260px){
+    .nav-bar {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
     .main {
         flex-direction: column;
-    }
-    .nav-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-bar hr {
-        position: relative;
-        width: 100%;
-        left: 0;
-        top: 0;
-        margin: 10px 0;
-    }
-    .nav {
-        display: none;
-    }
-    .nav-bar::after {
-        content: '\25BC'; /* Down arrow */
-        display: block;
-        text-align: center;
-        cursor: pointer;
-        color: var(--secondarycolor); /* Pfeil in der Farbe secondarycolor */
-    }
-    .nav-bar.open .nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 1.5em;
-        width: auto;
     }
     .Profil {
         margin-bottom: 2em;
@@ -485,3 +461,116 @@ body {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .nav {
+        margin: 0;
+    }
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-bar hr {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-bar::after {
+        content: '\25BC'; /* Down arrow */
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        color: var(--secondarycolor); /* Pfeil in der Farbe secondarycolor */
+    }
+    .nav-bar.open .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 1.5em;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .Profil-Header {
+        margin-left: 1em;
+    }
+    .Logo-img {
+        width: 5em;
+        height: 5em;
+        margin: 1em 1.5em 1em 1em;
+    }
+    .Profil-text-container {
+        line-height: 0.5;
+    }
+    .website-title {
+        font-size: 1.5em;
+    }
+    .website-email {
+        font-size: 0.7em;
+    }
+    .menu {
+        margin: 0 1em;
+    }
+    .menu-link {
+        padding: .8em;
+        margin: .8em;
+    }
+    .menu-icon {
+        margin-right: .5em;
+    }
+    .settings-content-header {
+        padding: .5em;
+    }
+    .settings-title {
+        font-size: 1.5em;
+    }
+    .btn-container {
+        margin-right: .5em;
+    }
+    .btn-zurück {
+        width: 6em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .btn-speichern {
+        width: 6em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .settings-edit {
+        margin: 1em;
+    }
+    .input-container {
+        margin: 0 1em;
+    }
+    .input-container label {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    .input-container input {
+        height: 2em;
+        padding: .5em;
+    }
+    .input-container textarea {
+        height: 8em;
+        padding: .5em;
+    }
+    .input-container select {
+        height: 3em;
+        padding: .5em;
+    }
+    .input-container-slider {
+        margin: 0
+    
+}
+}

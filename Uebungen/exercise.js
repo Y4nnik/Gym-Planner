@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h2>${exercise.name}</h2>
                         <p>${exercise.equipment}<br>${exercise.target}</p>
                     </div>
-                    <a href="exercise.html?exercise=${encodeURIComponent(exercise.name)}">></a>
+                    <a href="exercise.html?exercise=${encodeURIComponent(exercise.name)}"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
                 `;
 
                 exerciseList.appendChild(exerciseItem);
@@ -41,3 +41,9 @@ searchField.addEventListener('keyup', (e) => {
       }
     }
   });
+
+// Navigation Dropdown
+const navBar = document.querySelector('.nav-bar');
+navBar.addEventListener('click', () => {
+    navBar.classList.toggle('open');
+});

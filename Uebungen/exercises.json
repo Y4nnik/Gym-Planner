@@ -63,6 +63,14 @@
             "image": "exercise_resources/Trizeps.png",
             "webp": "exercise_resources/Trizeps.webp",
             "details": "Trizepsdrücken am Kabelzug wird durchgeführt, indem du einen Griff oder eine Stange an einer Kabelzugstation nach unten drückst, was den Trizeps stark beansprucht und aufbaut."
+        },
+        {
+            "name": "Barbell Squat",
+            "equipment": "Langhantel, Squat Rack",
+            "target": "Beine, Gesäß",
+            "image": "exercise_resources/squats.png",
+            "webp": "exercise_resources/breite_kniebeugen_mit_langhantel-sumo_kniebeugen.gif",
+            "details": "Die Barbell Squat oder Langhantel-Kniebeuge ist eine fundamentale Kraftübung, die den Unterkörper intensiv trainiert. Beginne, indem du die Langhantel aus einem Squat Rack sicher auf deinen Schultern ablegst. Positioniere deine Füße schulterbreit oder etwas weiter. Halte deinen Rücken gerade und senke deinen Körper, indem du die Hüften nach hinten und unten bewegst, als ob du dich auf einen Stuhl setzen würdest. Achte darauf, dass deine Knie nicht über die Zehenspitzen hinausragen. Drücke dich fest durch die Fersen, um in die Ausgangsposition zurückzukehren. Die Übung stärkt vor allem die Oberschenkel, das Gesäß und die untere Rückenmuskulatur."
         }
     ]
 }

@@ -3,6 +3,7 @@
         {
             "name": "Push Workout",
             "description": "A workout focused on pushing exercises targeting the chest, shoulders, and triceps.",
+            "image": "workouts_resources/Muscles-worked-on-push-day-workout.png",
             "exercises": [
                 "Schrägbankdrücken",
                 "Butterfly",
@@ -12,19 +13,21 @@
         {
             "name": "Pull Workout",
             "description": "A workout focused on pulling exercises targeting the back and biceps.",
+            "image": "workouts_resources/Muscles-worked-on-pull-day-workout.png",
             "exercises": [
-                "Kreuzheben",
-                "Klimmzüge",
-                "Bizepscurls"
+                "T-Bar Rudern (breit)",
+                "Latziehen zur Brust",
+                "Seitheben"
             ]
         },
         {
             "name": "Leg Workout",
             "description": "A workout focused on exercises targeting the legs.",
+            "image": "workouts_resources/Leg-workout-muscles.webp",
             "exercises": [
                 "Beinpresse",
-                "Kniebeugen",
-                "Beinstrecker"
+                "Barbell Squat",
+                "Rumänisches Kreuzheben"
             ]
         }
     ]

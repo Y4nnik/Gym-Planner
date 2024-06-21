@@ -6,6 +6,7 @@
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -18,18 +19,15 @@
             <a href="../Einstellung/einstellung.html">Einstellungen</a>
         </div>
     </div>
-    <figure>
-        <img src="img/360_F_317724775_qHtWjnT8YbRdFNIuq5PWsSYypRhOmalS.jpg" alt="Barbells">
-    </figure>
     <div class="main">
         <div class="week-days">
-            <div class="day" id="montag">Mo</div>
-            <div class="day" id="dienstag">Di</div>
-            <div class="day" id="mittwoch">Mi</div>
-            <div class="day" id="donnerstag">Do</div>
-            <div class="day" id="freitag">Fr</div>
-            <div class="day" id="samstag">Sa</div>
-            <div class="day" id="sonntag">So</div>
+            <div class="day" id="montag">Mo <br> <i class="fa-solid fa-dumbbell" style="color: #ffffff;"></i></div>
+            <div class="day" id="dienstag">Di <br> <i class="fa-solid fa-dumbbell" style="color: #ffffff;"></i></div>
+            <div class="day" id="mittwoch">Mi <br> <i class="fa-solid fa-bed" style="color: #ffffff;"></i></div>
+            <div class="day" id="donnerstag">Do <br> <i class="fa-solid fa-dumbbell" style="color: #ffffff;"></i></div>
+            <div class="day" id="freitag">Fr <br> <i class="fa-solid fa-dumbbell" style="color: #ffffff;"></i></div>
+            <div class="day" id="samstag">Sa <br> <i class="fa-solid fa-dumbbell" style="color: #ffffff;"></i></div>
+            <div class="day" id="sonntag">So <br> <i class="fa-solid fa-bed" style="color: #ffffff;"></i></div>
         </div>
         <div class="content-Tracking">
             <div class="card">
@@ -41,7 +39,7 @@
                     <p>Rest Day/Training</p>
                 </div>
                 <div class="button">
-                    <a href="#">➔</a>
+                    <a href="../Workouts/workout.html">➔</a>
                 </div>
             </div>
             <div class="card">
@@ -50,10 +48,10 @@
                 </div>
                 <div class="content">
                     <h3>Ernährung</h3>
-                    <p>0 kcal gegessen<br>2800 kcal offen</p>
+                    <p id="calls"></p>
                 </div>
                 <div class="button">
-                    <a href="#">➔</a>
+                    <a href="../Ernaehrung/ernaehrung.html">➔</a>
                 </div>
             </div>
         </div>
@@ -67,9 +65,14 @@
             </iframe>
         </div>
     </div>
-    <div class="footer">
-        <a href="../AboutUs/aboutUs.html">About Us</a>
-    </div>
+    <footer>
+        <a href="../Einstellung/loremIpsum.html">Datenschutz</a>
+        <a href="https://github.com/Y4nnik/Gym-Planner"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+    </footer>   
 <script src="homepage.js"></script>
 </body>
 </html>

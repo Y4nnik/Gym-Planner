@@ -100,6 +100,13 @@ body {
     align-items: center;
 }
 
+.exercises h1 {
+    color: var(--secondarytext);
+    font-size: 2em;
+    margin: 20px;
+}
+
+
 .exercise-item {
     background-color: #34495e;
     padding: 20px;
@@ -137,18 +144,30 @@ body {
         padding-left: 55px;
         background-color: #ffffff;
 }
-footer {
-    background-color: var(--secondarybackground);;
-    padding: 2em 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 10%;
+.returnBtn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
 }
-footer a {
+
+.startBtn {
+    background-color: var(--secondarycolor);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
     color: white;
-    text-decoration: none;
-    font-size: 2em;
+    font-size: 20px;
+    margin-top: 20px;
+    position:absolute;
+    width: 14em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    z-index: 1;
+    border-radius: 50px;
 }
 @media screen and (max-width: 1260px){
     .nav-bar {
@@ -194,20 +213,11 @@ footer a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    footer {
-        font-size: 0.5em;
-    }
-    .nav-bar.open hr {
-        width: 90%;
-    }
-    .nav-bar.open {
-        padding: 0;
-    }
-}
+
 @media screen and (max-width: 600px) {
     .exercise-item {
         flex-direction: column;
         align-items: center;
     }
 }
+

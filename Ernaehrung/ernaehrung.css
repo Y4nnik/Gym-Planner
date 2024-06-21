@@ -176,7 +176,7 @@ path.grey {
 path.purple {
     stroke: var(--secondarycolor);
     stroke-dasharray: calc(40 * 3.142 * 1.85);
-    stroke-dashoffset: 230;
+    stroke-dashoffset: 233;
     /* adjust last number for variance */
 }
 .calories-planned {
@@ -315,27 +315,54 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.footer {
+footer {
     background-color: var(--secondarybackground);;
-    padding: 2em;
+    padding: 2em 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
-.footer a {
+footer a {
     color: white;
     text-decoration: none;
+    font-size: 2em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1260px){
+    .nav-bar {
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width: 925px) {
+    .nav-bar {
+        width: 80%;
+    }
+    .nav a {
+        font-size: 1.5em;
+    }
+    .day {
+        font-size: 1.3em;
+        width: 1.8em;
+        height: 1.8em;
+        line-height: 1.8em;
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        margin: 0;
+    }
     .nav-bar {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0;
     }
     .nav-bar hr {
-        position: relative;
-        width: 100%;
-        left: 0;
-        top: 0;
-        margin: 10px 0;
+        display: none;
     }
     .nav {
         display: none;
@@ -350,13 +377,20 @@ input[type=number]::-webkit-inner-spin-button {
     .nav-bar.open .nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
         gap: 10px;
     }
     .nav a {
         font-size: 1.5em;
-        width: auto;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
     }
+}
+
+
+@media screen and (max-width: 768px) {
 
     .week-days {
         display: none;
@@ -407,13 +441,26 @@ input[type=number]::-webkit-inner-spin-button {
         display: block;
         width: 100%;
         margin: 1em 0;
+        z-index: 1;
     }
 
     .selected-calories-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1em 0;
+        z-index: 0;
+        position: relative;
+        top: -162em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .calories-left {
+        position: relative;
+        top: -4.2em;
+    }
+    .currentCalories {
+        position: relative;
+        left: 3.7em;
     }
 
     .Naehrwerte {
@@ -433,5 +480,19 @@ input[type=number]::-webkit-inner-spin-button {
     .visible {
         display: block !important;
     }
+    
 }
 
+@media  screen and (max-width: 465px) {
+    .heading h2 {
+        font-size: 1em;
+        margin-bottom: 2v5px;
+    }
+    
+}
+
+@media screen and (max-width: 460px){
+    .selected-calories-container {
+        top: -168em;
+    }
+}

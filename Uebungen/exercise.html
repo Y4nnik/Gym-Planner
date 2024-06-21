@@ -27,6 +27,13 @@
         </section>
     </main>
     <script>
+
+        // Navigation Dropdown
+        const navBar = document.querySelector('.nav-bar');
+        navBar.addEventListener('click', () => {
+            navBar.classList.toggle('open');
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const exerciseName = urlParams.get('exercise');

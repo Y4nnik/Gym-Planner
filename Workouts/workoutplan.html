@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym-Planner</title>
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="workout.css">
+    <link rel="stylesheet" href="workoutplan.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -19,23 +20,33 @@
         </div>
     </div>
     <main>
-        <section class="search">
-            <input type="search" placeholder="Suche" id="searchField">
-        </section>
+        <a href="workout.html"><button class="returnBtn"><i class="fa-solid fa-arrow-left" style="color: var(--secondarytext);"></i></button></a>
         <section class="exercises" id="workout-detail">
             <!-- Exercise items will be injected here by JavaScript -->
         </section>
         <section class="exercises" id="exercise-list">
             <!-- Exercise items will be injected here by JavaScript -->
         </section>
+        <button class="startBtn" onclick="activateWorkout()">Start Workout</button>
     </main>
     <script>
-         document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const workoutName = urlParams.get('workout');
-            var exercises = [];
+        var workoutName = '';
 
-            fetch('workouts.json')
+        // Navigation Dropdown
+            const navBar = document.querySelector('.nav-bar');
+            navBar.addEventListener('click', () => {
+                navBar.classList.toggle('open');
+            });
+
+        function activateWorkout() {
+            window.location.href = `active_workout.html?workout=${encodeURIComponent(workoutName)}`;
+        }
+
+         document.addEventListener('DOMContentLoaded', async function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            workoutName = urlParams.get('workout');
+            var exercises = [];
+            await fetch('workouts.json')
                 .then(response => response.json())
                 .then(data => {
                     const workout = data.workouts.find(w => w.name === workoutName);
@@ -43,7 +54,6 @@
                         const detailSection = document.getElementById('workout-detail');
                         detailSection.innerHTML = `
                             <h1>${workout.name}</h1>
-                            <p>${workout.description}</p>
                         `;
                         exercises = workout.exercises;
                     } else {
@@ -63,10 +73,12 @@
                         const exerciseItem = document.createElement('div');
                         exerciseItem.classList.add('exercise-item');
                         exerciseItem.innerHTML = `
-                            <h2>${exercise.name}</h2>
-                            <p><strong>Muskelgruppe:</strong> ${exercise.target}</p>
-                            <img src="${exercise.image}" alt="${exercise.name}">
-                            <a href="../Uebungen/exercise.html?exercise=${exercise.name}">Details</a>
+                            <img src="${exercise.image}" alt="Exercise">
+                            <div>
+                                <h2>${exercise.name}</h2>
+                                <p>${exercise.equipment}<br>${exercise.training}</p>
+                            </div>
+                            <a href="../Uebungen/exercise.html?exercise=${encodeURIComponent(exercise.name)}"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
                         `;
                         exerciseList.appendChild(exerciseItem);
                     });

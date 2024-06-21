@@ -91,7 +91,7 @@ figure img {
     text-align: center;
     width: 2em;
     height: 2em;
-    line-height: 2em;
+    line-height: 1.3em;
     margin: 1em;
     font-size: 1.5em;
 }
@@ -101,6 +101,7 @@ figure img {
 .content-Tracking {
     display: flex;
     justify-content: space-between;
+    gap: 1em;
 }
 .content-Tracking h3 {
     color: white;
@@ -141,28 +142,44 @@ iframe {
     height: 50em;
     border: none;
 }
-.footer {
+footer {
     background-color: var(--secondarybackground);;
     padding: 2em 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
-.footer a {
+footer a {
     color: white;
     text-decoration: none;
+    font-size: 2em;
+}
+@media screen and (max-width: 1260px){
+    .nav-bar {
+        width: 80%;
+    }
+    .day {
+        font-size: 1.3em;
+        width: 1.8em;
+        height: 1.8em;
+        line-height: 1em;
+        margin: 0.5em;
+    }
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+    .nav {
+        margin: 0;
+    }
     .nav-bar {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0;
     }
     .nav-bar hr {
-        position: relative;
-        width: 100%;
-        left: 0;
-        top: 0;
-        margin: 10px 0;
+        display: none;
     }
     .nav {
         display: none;
@@ -177,13 +194,26 @@ iframe {
     .nav-bar.open .nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
         gap: 10px;
     }
     .nav a {
         font-size: 1.5em;
-        width: auto;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .week-days {
         display: none;
     }
@@ -199,8 +229,9 @@ iframe {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1em;
+        padding: 2em;
         margin: 1em 0;
+        min-width: 90%;
     }
 
     .selected-day {
@@ -235,6 +266,23 @@ iframe {
     }
     iframe {
         height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .selected-day-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
         width: 100%;
     }
 }

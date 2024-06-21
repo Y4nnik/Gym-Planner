@@ -100,7 +100,7 @@ body {
     align-items: center;
 }
 
-.exercise-item {
+.workout-item {
     background-color: #34495e;
     padding: 20px;
     margin: 10px;
@@ -111,24 +111,22 @@ body {
     color: #FFF;
 }
 
-.exercise-item img {
+.workout-item img {
     width: 10em;
     height: 10em;
     margin-right: 20px;
     border-radius: 5px;
 }
 
-.exercise-item div {
+.workout-item div {
     flex-grow: 1;
 }
-.exercise-item p {
+.workout-item p {
     color: var(--secondarytext);
 }
-.exercise-item a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 24px;
-    padding: 10px;
+.workout-item a {
+    font-size: 40px;
+    margin-right: 30px;
 }
 #searchField {
         width: 80%;
@@ -138,4 +136,75 @@ body {
         background: url('search.png') no-repeat scroll 12px 12px;
         padding-left: 55px;
         background-color: #ffffff;
+}
+footer {
+    background-color: var(--secondarybackground);;
+    padding: 2em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+@media screen and (max-width: 1260px){
+    .nav-bar {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        margin: 0;
+    }
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-bar hr {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-bar::after {
+        content: '\25BC'; /* Down arrow */
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        color: var(--secondarycolor); /* Pfeil in der Farbe secondarycolor */
+    }
+    .nav-bar.open .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 1.5em;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 380px) {
+    .workout-item {
+        flex-direction: column;
+    }
+    footer {
+        font-size: 0.3em;
+    }
 }

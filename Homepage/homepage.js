@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navBar.addEventListener('click', () => {
         navBar.classList.toggle('open');
     });
-
+    const callseaten = parseInt(window.localStorage.getItem('caloriesEaten'));
+    const callsopen = window.localStorage.getItem('caloriesLeft');
+    document.getElementById('calls').innerHTML = callseaten + ' kcal gegessen' + '<br>' + callsopen + ' kcal offen';
     // Funktion zum Erstellen der Dropdowns
     const createDropdowns = () => {
         if (window.innerWidth <= 768) {

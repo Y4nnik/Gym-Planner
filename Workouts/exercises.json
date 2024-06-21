@@ -6,6 +6,29 @@
             "target": "Brust (obere)",
             "image": "exercise_resources/langhantel-bankdruecken-startposition.jpg",
             "webp": "exercise_resources/bank.gif",
+            "training": "3 Sätze, 8-12 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "3"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "12 Wiederholungen",
+                        "8 Wiederholungen",
+                        "10 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "60 kg",
+                        "80 kg",
+                        "70 kg"
+                    ]
+                }
+            ],
             "details": "Das Schrägbankdrücken wird auf einer schräg gestellten Bank durchgeführt, um die obere Brustmuskulatur gezielt zu stärken. Du legst dich auf die Bank, greifst die Langhantel etwas breiter als schulterbreit und drückst sie von der Brust weg nach oben. Achte darauf, die Hantel kontrolliert zu bewegen und die Muskeln während der Bewegung aktiv zu halten."
         },
         {
@@ -14,6 +37,31 @@
             "target": "Quadrizeps",
             "image": "exercise_resources/klassische-horizontale-beinpresse-startposition.jpg",
             "webp": "exercise_resources/beinpresse.webp",
+            "training": "4 Sätze, 10-15 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "4"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "15 Wiederholungen",
+                        "12 Wiederholungen",
+                        "10 Wiederholungen",
+                        "10 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "100 kg",
+                        "120 kg",
+                        "140 kg",
+                        "160 kg"
+                    ]
+                }
+            ],
             "details": "Die Beinpresse ist eine großartige Übung zur Stärkung der Quadrizeps-Muskulatur. Setze dich in die Maschine, platziere deine Füße fest auf der Plattform und drücke das Gewicht weg, während du darauf achtest, die Beine nicht vollständig zu strecken, um die Kniegelenke zu schonen."
         },
         {
@@ -22,6 +70,29 @@
             "target": "Beinbeuger",
             "image": "exercise_resources/rumaenisches-kreuzheben-startposition.png",
             "webp": "exercise_resources/rum.gif",
+            "training": "3 Sätze, 8-12 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "3"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "12 Wiederholungen",
+                        "10 Wiederholungen",
+                        "8 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "40 kg",
+                        "50 kg",
+                        "60 kg"
+                    ]
+                }
+            ],
             "details": "Beim Rumänischen Kreuzheben startest du in einer stehenden Position mit einer Lang- oder Kurzhantel. Beuge dich mit geradem Rücken nach vorne und lasse die Gewichte nahe an deinen Beinen herab, bis du eine Dehnung in den Beinbeugern spürst, dann kehre in die Ausgangsposition zurück."
         },
         {
@@ -30,6 +101,27 @@
             "target": "Rücken (oberer)",
             "image": "exercise_resources/T-Bar.png",
             "webp": "exercise_resources/T-Bar.webp",
+            "training": "2 Sätze, 8-12 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "2"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "12 Wiederholungen",
+                        "10 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "40 kg",
+                        "50 kg"
+                    ]
+                }
+            ],
             "details": "Das T-Bar Rudern ist effektiv für den oberen Rücken. Stehe mit gespreizten Beinen über dem T-Bar-Gerät, beuge leicht die Knie und ziehe die gewichtete Stange mit einem breiten Griff bis zum unteren Rippenbereich. Halte kurz inne, bevor du das Gewicht langsam wieder absenkst."
         },
         {
@@ -38,6 +130,29 @@
             "target": "Brust",
             "image": "exercise_resources/Butterfly.png",
             "webp": "exercise_resources/Butterfly.webp",
+            "training": "3 Sätze, 10-15 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "3"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "15 Wiederholungen",
+                        "12 Wiederholungen",
+                        "10 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "40 kg",
+                        "50 kg",
+                        "60 kg"
+                    ]
+                }
+            ],
             "details": "Beim Butterfly sitzt du an einer speziellen Maschine, platzierst deine Unterarme gegen die gepolsterten Hebel und führst deine Arme in einer fließenden Bewegung zusammen, was die Brustmuskulatur isoliert und trainiert."
         },
         {
@@ -46,6 +161,33 @@
             "target": "Rücken (breiter)",
             "image": "exercise_resources/Latziehen_zur_Brust.png",
             "webp": "exercise_resources/Latziehen_zur_Brust.gif",
+            "training": "5 Sätze, 8-12 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "5"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "12 Wiederholungen",
+                        "10 Wiederholungen",
+                        "8 Wiederholungen",
+                        "10 Wiederholungen",
+                        "12 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "50 kg",
+                        "60 kg",
+                        "70 kg",
+                        "60 kg",
+                        "50 kg"
+                    ]
+                }
+            ],
             "details": "Beim Latziehen zur Brust greifst du eine Stange an einem Kabelzug oberhalb deines Kopfes und ziehst sie kontrolliert zur Brust, um den breiten Rückenmuskel zu beanspruchen."
         },
         {
@@ -54,6 +196,31 @@
             "target": "Schultern",
             "image": "exercise_resources/Seitheben.png",
             "webp": "exercise_resources/Seitheben.webp",
+            "training": "4 Sätze, 10-15 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "4"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "15 Wiederholungen",
+                        "12 Wiederholungen",
+                        "10 Wiederholungen",
+                        "10 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "5 kg",
+                        "6 kg",
+                        "7 kg",
+                        "6 kg"
+                    ]
+                }
+            ],
             "details": "Beim Seitheben stehst du mit Kurzhanteln in beiden Händen und hebst die Arme seitlich bis auf Schulterhöhe, um die seitlichen Schultermuskeln zu trainieren."
         },
         {
@@ -62,7 +229,64 @@
             "target": "Trizeps",
             "image": "exercise_resources/Trizeps.png",
             "webp": "exercise_resources/Trizeps.webp",
+            "training": "2 Sätze, 10-15 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "2"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "15 Wiederholungen",
+                        "12 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "30 kg",
+                        "40 kg"
+                    ]
+                }
+            ],
             "details": "Trizepsdrücken am Kabelzug wird durchgeführt, indem du einen Griff oder eine Stange an einer Kabelzugstation nach unten drückst, was den Trizeps stark beansprucht und aufbaut."
+        },
+        {
+            "name": "Barbell Squat",
+            "equipment": "Langhantel, Squat Rack",
+            "target": "Beine, Gesäß",
+            "image": "exercise_resources/squats.png",
+            "webp": "exercise_resources/breite_kniebeugen_mit_langhantel-sumo_kniebeugen.gif",
+            "training": "5 Sätze, 8-12 Wiederholungen",
+            "trainingsdetails": [
+                {
+                    "name": "Sätze",
+                    "value": "5"
+                },
+                {
+                    "name": "Wiederholungen",
+                    "value": [
+                        "12 Wiederholungen",
+                        "10 Wiederholungen",
+                        "8 Wiederholungen",
+                        "10 Wiederholungen",
+                        "12 Wiederholungen"
+                    ]
+                },
+                {
+                    "name": "Gewicht",
+                    "value": [
+                        "60 kg",
+                        "70 kg",
+                        "80 kg",
+                        "70 kg",
+                        "60 kg"
+                    ]
+                }
+            ],
+            "details": "Die Barbell Squat oder Langhantel-Kniebeuge ist eine fundamentale Kraftübung, die den Unterkörper intensiv trainiert. Beginne, indem du die Langhantel aus einem Squat Rack sicher auf deinen Schultern ablegst. Positioniere deine Füße schulterbreit oder etwas weiter. Halte deinen Rücken gerade und senke deinen Körper, indem du die Hüften nach hinten und unten bewegst, als ob du dich auf einen Stuhl setzen würdest. Achte darauf, dass deine Knie nicht über die Zehenspitzen hinausragen. Drücke dich fest durch die Fersen, um in die Ausgangsposition zurückzukehren. Die Übung stärkt vor allem die Oberschenkel, das Gesäß und die untere Rückenmuskulatur."
         }
+        
     ]
 }

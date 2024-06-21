@@ -1,31 +1,125 @@
-@keyframes fadey { 
-    0% { opacity: 0; }
-    15% { opacity: 1; }
-    85% { opacity: 1; }
-    100% { opacity: 0; }
-    }
-    body { 
-      font-family: Avenir, Arial, sans-serif; 
-      margin: 0;
-    }
-    figure#slideshow { 
-      width: 100%; 
-      margin: 0 auto; 
-      position: absolute; 
-      cursor: pointer;
-    }
-    figure#slideshow img { 
-      position: absolute; 
-      left: 0; top: 0; 
-      width: 100%; height: 650px; 
-      opacity: 0; 
-    }
-    figure#slideshow img:first-child { position: relative; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    .loginContainer {
-      position: absolute;
-      top: 50%;
-      height: 300px;
-      width: 400px;
-      background: gray;
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #173a58;
+  color: white;
+}
+
+.logo {
+  height: 9em;
+  width: 12em;
+}
+
+
+
+input {
+  padding: 10px;
+  width: 20em;
+  border: none;
+  border-radius: 5px;
+}
+
+header {
+  background-color: var(--mainbackground);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 30em;
+}
+
+.description {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4081;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.iconRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .buttons {
+      flex-direction: column;
+  }
+}
+footer {
+  background-color: var(--secondarybackground);;
+  padding: 2em 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1530px) {
+  .iconRow img {
+    height: 10em;
+    width: 10em;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .iconRow img {
+    height: 5em;
+    width: 5em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer {
+        font-size: 0.5em;
     }
+}
+}
+@media screen and (max-width: 600px) {
+  .buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+  .iconRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
