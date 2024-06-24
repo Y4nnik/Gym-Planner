@@ -34,6 +34,7 @@
             navBar.classList.toggle('open');
         });
 
+        // Load exercise details from JSON file and display them
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const exerciseName = urlParams.get('exercise');

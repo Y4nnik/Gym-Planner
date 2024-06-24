@@ -32,36 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.localStorage.setItem('fat', 0);
     }
 
-
-    // set all local storage values to 0
-    if (!window.localStorage.getItem('caloriesEaten')) {
-        window.localStorage.setItem('caloriesEaten', 0);
-    }
-    if (!window.localStorage.getItem('caloriesLeft')) {
-        window.localStorage.setItem('caloriesLeft', 3000);
-    }
-    if (!window.localStorage.getItem('kalorienInput')) {
-        window.localStorage.setItem('kalorienInput', 3000);
-    }
-    if (!window.localStorage.getItem('proteinsGramm')) {
-        window.localStorage.setItem('proteinsGramm', 225);
-    }
-    if (!window.localStorage.getItem('proteins')) {
-        window.localStorage.setItem('proteins', 0);
-    }
-    if (!window.localStorage.getItem('carbsGramm')) {
-        window.localStorage.setItem('carbsGramm', 289);
-    }
-    if (!window.localStorage.getItem('carbs')) {
-        window.localStorage.setItem('carbs', 0);
-    }
-    if (!window.localStorage.getItem('fatGramm')) {
-        window.localStorage.setItem('fatGramm', 105);
-    }
-    if (!window.localStorage.getItem('fat')) {
-        window.localStorage.setItem('fat', 0);
-    }
-
     // Navigation Dropdown
     const navBar = document.querySelector('.nav-bar');
     navBar.addEventListener('click', () => {
@@ -178,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Neuladen der Dropdowns bei Änderung der Fenstergröße
     window.addEventListener('resize', createDropdowns);
 
-    // Get the values from local storage
+    //Die Variablen vom local storage holen
     const kalorienInput = parseInt(window.localStorage.getItem('kalorienInput'));
     const proteinsGramm = parseInt(window.localStorage.getItem('proteinsGramm'));
     const proteins = parseInt(window.localStorage.getItem('proteins'));
@@ -192,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const valuePathpurple = (prozentKalorien * 213) / 100 + 20;
 
 
-    // Set the initial values
+    //Die Werte in die HTML Elemente einfügen
     document.querySelector('.calories-planned h3').innerText = kalorienInput;
     document.querySelector('.calories-left h3').innerText = kaloriesleft || kalorienInput;
     document.querySelector('.calories-eaten h3').innerText = window.localStorage.getItem('caloriesEaten') || 0;
@@ -212,29 +182,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('purple').style.strokeDashoffset = valuePathpurple;
     }
 
-    // Function to update the values
+    //Funktion zum Updaten der Werte
     function updateValues(event) {
-        // Get the parent banner of the clicked add button
         const banner = event.target.closest('.banner');
 
-        // Get input values
+        // Bekomme die Werte aus den Input Feldern
         const inputCarbs = banner.querySelector('.input-carbs').value;
         const inputProteins = banner.querySelector('.input-proteins').value;
         const inputFat = banner.querySelector('.input-fat').value;
 
-        // Validate inputs
+        // Validiere die Eingaben
         if (inputCarbs === '' || inputProteins === '' || inputFat === '') {
             alert("Please fill in all fields.");
             return;
         }
 
-        // Calculate the calories
+        // Berechne die Kalorien
         const carbsCalories = parseInt(inputCarbs) * carbFactor;
         const proteinsCalories = parseInt(inputProteins) * proteinFactor;
         const fatCalories = parseInt(inputFat) * fatFactor;
         const totalCalories = carbsCalories + proteinsCalories + fatCalories;
 
-        // Update the calories-eaten value
+        // Update the calories eaten value
         const caloriesEatenElement = document.querySelector('.calories-eaten h3');
         const currentCaloriesEaten = parseInt(caloriesEatenElement.innerText) || 0;
         const newCaloriesEaten = currentCaloriesEaten + totalCalories;
@@ -277,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         banner.querySelector('.input-fat').value = '';
     }
 
-    // Get all add buttons (images) and attach click event listener
+    //Selektiere alle add buttons und füge einen click event listener hinzu
     const addButtons = document.querySelectorAll('.banner img[alt="add icon"]');
     addButtons.forEach(function (button) {
         button.addEventListener('click', updateValues);

@@ -1,7 +1,8 @@
-// script.js
+
 const searchField = document.getElementById('searchField');
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Load exercises from JSON file and display them on the page
     fetch('exercises.json')
         .then(response => response.json())
         .then(data => {
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+// Search functionality
 searchField.addEventListener('keyup', (e) => {
     const exerciseList = document.getElementById('exercise-list');
     const li = exerciseList.getElementsByClassName('exercise-item');

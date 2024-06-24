@@ -14,6 +14,36 @@ document.querySelector('.actual')?.classList.remove('actual');
 document.getElementById(day).classList.add('actual');
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Setzen der Local Storage Variablen auf default Werte (Wichtig für Ernährungsseite bei erstem Aufruf und Anzeige der Kalorien auf der Homepage)
+    if (!window.localStorage.getItem('caloriesEaten')) {
+        window.localStorage.setItem('caloriesEaten', 0);
+    }
+    if (!window.localStorage.getItem('caloriesLeft')) {
+        window.localStorage.setItem('caloriesLeft', 3000);
+    }
+    if (!window.localStorage.getItem('kalorienInput')) {
+        window.localStorage.setItem('kalorienInput', 3000);
+    }
+    if (!window.localStorage.getItem('proteinsGramm')) {
+        window.localStorage.setItem('proteinsGramm', 225);
+    }
+    if (!window.localStorage.getItem('proteins')) {
+        window.localStorage.setItem('proteins', 0);
+    }
+    if (!window.localStorage.getItem('carbsGramm')) {
+        window.localStorage.setItem('carbsGramm', 289);
+    }
+    if (!window.localStorage.getItem('carbs')) {
+        window.localStorage.setItem('carbs', 0);
+    }
+    if (!window.localStorage.getItem('fatGramm')) {
+        window.localStorage.setItem('fatGramm', 105);
+    }
+    if (!window.localStorage.getItem('fat')) {
+        window.localStorage.setItem('fat', 0);
+    }
+
+
     // Navigation Dropdown
     const navBar = document.querySelector('.nav-bar');
     navBar.addEventListener('click', () => {
@@ -77,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     };
+
+
 
     // Initiales Erstellen der Dropdowns
     createDropdowns();

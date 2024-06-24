@@ -33,6 +33,7 @@
         <button class="startBtn" onclick="nextExercise()">Nächste Übung</button>
     </main>
     <script>
+        // Variables
         var activeExercise = "";
         var count = 0;
         var workoutName = '';
@@ -44,7 +45,9 @@
             navBar.classList.toggle('open');
         });
 
+        // Load exercise details for the next exercise from JSON file and display them and go back to workoutplan if all exercises are done
         async function nextExercise() {
+            // Check if all exercises are done
             if (count >= setcount) {
                 window.location.href = `workoutplan.html?workout=${encodeURIComponent(workoutName)}`;
                 return;
@@ -52,6 +55,7 @@
             await fetch('workouts.json')
                 .then(response => response.json())
                 .then(data => {
+                    // Get the next exercise and increase the count
                     activeExercise = data.workouts.find(w => w.name === workoutName).exercises[count];
                     count++;
                 })
@@ -93,11 +97,14 @@
                 .catch(error => console.error('Error loading exercises:', error));
         }
 
+
          document.addEventListener('DOMContentLoaded', async function() {
+            // Get the workout name from the URL
             const urlParams = new URLSearchParams(window.location.search);
             workoutName = urlParams.get('workout');
             var exercises = [];
 
+            // Load workout details and the exercises details from JSON file and display them
             await fetch('workouts.json')
                 .then(response => response.json())
                 .then(data => {

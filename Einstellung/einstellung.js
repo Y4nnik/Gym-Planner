@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation Dropdown
     const navBar = document.querySelector('.nav-bar');
@@ -19,12 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     addEventListeners('privatsphaere');
 
     // Add event listener for the contact form
-    const contactFormButton = document.querySelector('#kontaktanfrage .btn-speichern');
-    contactFormButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        showSuccessMessage();
-        clearContactForm();
-    });
 });
 
 function tabs(tabIndex) {
@@ -96,13 +92,27 @@ function saveUserData(tab) {
 }
 
 function addEventListeners(tab) {
-    const saveButton = document.querySelector(`#${tab} .btn-speichern`);
     const cancelButton = document.querySelector(`#${tab} .btn-zurück`);
+    const form = document.querySelector(`#${tab} form`);
 
-    saveButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        saveUserData(tab);
-    });
+
+    form.addEventListener('submit', (event) => {
+        if (event != "invalid") {
+            event.preventDefault();
+            saveUserData(tab);
+            calculateMacros();
+            window.alert('Daten erfolgreich gespeichert!');
+        }
+    }
+    );
+    form4.addEventListener('submit', (event) => {
+        if (event != "invalid") {
+            event.preventDefault();
+            showSuccessMessage();
+            clearContactForm();
+        }
+    }
+    );
 
     cancelButton.addEventListener('click', (event) => {
         event.preventDefault();
@@ -154,8 +164,8 @@ for (let i = 0; i < container.length; i++) {
 }
 
 // Calorie to macronutrient breakdown
-const kalorienInput = document.getElementById('kalorien');
-kalorienInput.addEventListener('input', () => {
+function calculateMacros() {
+    const kalorienInput = document.getElementById('kalorien');
     const kalorien = parseFloat(kalorienInput.value);
 
     const proteinsCal = Math.round(kalorien * 0.30);
@@ -175,4 +185,4 @@ kalorienInput.addEventListener('input', () => {
     window.localStorage.setItem('proteinsGramm', proteinsGramm);
     window.localStorage.setItem('carbsGramm', carbsGramm);
     window.localStorage.setItem('fatGramm', fatGramm);
-});
+}

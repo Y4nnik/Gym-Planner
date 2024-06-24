@@ -37,11 +37,13 @@
             navBar.addEventListener('click', () => {
                 navBar.classList.toggle('open');
             });
-
+        
+        // Start the workout by navigating to the active workout page with the selected workout
         function activateWorkout() {
             window.location.href = `active_workout.html?workout=${encodeURIComponent(workoutName)}`;
         }
 
+        // Load workout details and the exercises from JSON file and display them
          document.addEventListener('DOMContentLoaded', async function() {
             const urlParams = new URLSearchParams(window.location.search);
             workoutName = urlParams.get('workout');

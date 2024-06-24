@@ -1,8 +1,8 @@
-// script.js
+
 const searchField = document.getElementById('searchField');
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Load Workouts
+  // Load Workouts from JSON file and display them on the page
     const workoutList = document.getElementById('workout-list');
 
     fetch('workouts.json')
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error loading workouts:', error));
 });
 
+// Search functionality
 searchField.addEventListener('keyup', (e) => {
     const exerciseList = document.getElementById('workout-list');
     const li = exerciseList.getElementsByClassName('workout-item');
